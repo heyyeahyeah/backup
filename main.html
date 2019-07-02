@@ -70,7 +70,7 @@
     <div id="top" class="page_container jsOnBtn">
         <nav class="area_menu_header">
             <div class="area_menu_header_6btn">
-                <h1 id="JtextLimit">アイドルギャラリー</h1>
+                <h1 id="JtextLimit">아이돌 갤러리</h1>
             </div>
             <div id="headerPopupMenu" class="headerPopupMenu">
          </nav>
@@ -179,8 +179,16 @@
                         </div>
                         <div class="idol" style="background:url(b4bcd4a96f7cf55e96d9cfd6ce694ca9.jpg) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="33">
                         </div>
+						<div class="idol" style="background:url(8f6d0eb1d230ebf622f0e72ae0f9bb12.jpg) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="34">
+                        </div>
                     </div>
                 </li>
+				<li style="width: 318px;padding-left: 2px">
+                    <div class="displayBox">
+                        <div class="idol" style="background:url(497db13df6dbfa90dd87102e6c2134bc.jpg) no-repeat; background-size:54px 54px;width:54px;height:54px;position:relative;" data-index="35">
+                        </div>
+					</div>
+				</li>
             </ul>
         </div>
         <ol class="icon_navi" style="position:relative;margin-bottom: -1px;margin-top: -7px;">
@@ -191,6 +199,7 @@
             <li><a>5</a></li>
             <li><a>6</a></li>
             <li><a>7</a></li>
+			<li><a>8</a></li>
         </ol>
         <div id="tab-content" style="position:relative;z-index:1">
         </div>
@@ -254,18 +263,18 @@
         </style>
         <script type="text/template" id="tab-4-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8" style="font-size:11px">
-<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">プロフィール</a>
-<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">セリフ一覧</a>
-<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">エピソード</a>
-<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">アイドル情報</a>
+<a name="tab_1" href="#" class="tab_line_4 tab_text selected" style="font-size:11px;">프로필</a>
+<a name="tab_2" href="#" class="tab_line_4 tab_text js_tab_comment_list" style="font-size:11px;">대사 목록</a>
+<a name="tab_3" href="#" class="tab_line_4 tab_text" style="font-size:11px;">에피소드</a>
+<a name="tab_4" href="#" class="tab_line_4 tab_text" style="font-size:11px;">아이돌 정보</a>
 </div>
 </script>
         <script type="text/template" id="tab-3-template">
             <div id="contents_tab" class="tab_common-large m-Top4 m-Btm8">
-<a name="tab_1" class="tab_line_3 tab_text" href="#">プロフィール</a>
-<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">セリフ一覧</a>
-<a name="tab_3" href="#" style='display:none;'>エピソード</a>
-<a name="tab_4" class="tab_line_3 tab_text" href="#">アイドル情報</a>
+<a name="tab_1" class="tab_line_3 tab_text" href="#">프로필</a>
+<a name="tab_2" class="tab_line_3 tab_text js_tab_comment_list" href="#">대사 목록</a>
+<a name="tab_3" href="#" style='display:none;'>에피소드</a>
+<a name="tab_4" class="tab_line_3 tab_text" href="#">아이돌 정보</a>
 </div>
 </script>
         <script type="text/template" id="idol-base-template">
@@ -293,8 +302,8 @@
 <div class="detail_idol_real_name" <% if(idol_detail.data.alias_name == "") { %>style="top:19px;"<% } %>><%- idol_detail.data.real_name %></div>
 </div>
 <div class="detail_idol_num_<%- idol_detail.data.attribute %>">
-<div class="detail_idol_register_num"><span class="yellow">34</span> / 34</div>
-<div class="detail_idol_love_num"><span class="yellow">34</span> / 34</div>
+<div class="detail_idol_register_num"><span class="yellow">36</span> / 36</div>
+<div class="detail_idol_love_num"><span class="yellow">36</span> / 36</div>
 </div>
 <% if(birthday_flag) { %>
 <div class="icon_birthday"></div>
@@ -323,7 +332,7 @@
 <div class="title hgt"></div><div class="pr"><%- profile.card_height %>cm</div>
 </div>
 <div class="blk">
-<div class="title age"></div><div class="pr"><%- profile.card_age %>歳</div>
+<div class="title age"></div><div class="pr"><%- profile.card_age %>살</div>
 </div>
 </div>
 <div class="data_list">
@@ -350,7 +359,7 @@ kg
 </div>
 <div class="data_list">
 <div class="blk">
-<div class="title bld"></div><div class="pr"><%- profile.card_blood %>型</div>
+<div class="title bld"></div><div class="pr"><%- profile.card_blood %>형</div>
 </div>
 <div class="blk">
 <div class="title arm"></div><div class="pr"><%- profile.card_arm %></div>
@@ -473,7 +482,7 @@ kg
 <% if (!ios_app_flg || !apple_review) { %>
 <% if (val.story_id > 0 && +val.voice_enable[last]) { %>
 <div class="checkForm ep_off" style="margin-top:0;margin-bottom:0">
-エピソードでボイスを再生させる
+에피소드에 보이스를 함께 재생
 </div>
 <% } %>
 <% } %>
@@ -540,7 +549,7 @@ kg
 </section>
 <% if(trade_prohibition.is_trade_limit) { %>
 <div class="t-Cnt red <% if(is_exist_archive) { %>m-Btm8<% } %>">
-このアイドルはトレード、フリートレード、贈り物ができません。
+이 아이돌은 트레이드, 프리 트레이드, 선물이 불가능합니다.
 </div>
 <% } %>
 <div class="area-btn-common _base-width">
@@ -553,7 +562,7 @@ kg
 </div>
 <% if (event) { %>
 <h3 class="title_hanyo m-Top8 m-Btm8">
-<div>登場イベント</div>
+<div>등장 이벤트</div>
 </h3>
 <% Object.keys(event).forEach(function (key) { %>
 <div class="t-Cnt m-Btm5">
@@ -690,7 +699,7 @@ kg
                 var idol = {};
                 idol.detail_list = [{
                     "data": {
-                        "card_name": "\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "타카모리 아이코",
                         "rarity": "1",
                         "cost": "2",
                         "attribute": "passion",
@@ -701,41 +710,41 @@ kg
                         "default_defense": "160",
                         "hash_card_id": "25ea7fdd66fc6bd8e7209a4c0d2ba00c",
                         "alias_name": "",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3000201",
-                        "card_name": "\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
-                        "comment": "\u521d\u3081\u307e\u3057\u3066\uff64\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\u3055\u3093\uff61\uff8c\uff67\uff9d\u306e\u307f\u306a\u3055\u3093\u304c\u512a\u3057\u3044\u6c17\u6301\u3061\u306b\u306a\u308c\u308b\u3088\u3046\u306a\uff64\u5fae\u7b11\u3093\u3067\u304f\u308c\u308b\u3088\u3046\u306a\uff71\uff72\uff84\uff9e\uff99\u3092\u76ee\u6307\u3057\u305f\u3044\u3068\u601d\u3063\u3066\u3044\u308b\u3093\u3067\u3059\uff61\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u3057\u307e\u3059\u306d\u3063\uff61",
-                        "comments_my_1": "\u3044\u3044\u65e5\u306b\u306a\u308b\u3068\u3044\u3044\u3067\u3059\u306d",
-                        "comments_my_2": "\u3044\u3064\u3082\u304a\u75b2\u308c\u69d8\u3067\u3059",
-                        "comments_my_3": "\u79c1\uff64\u9811\u5f35\u308c\u3066\u308b\u304b\u306a\u2026? ",
-                        "comments_my_4": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\uff64\u3069\u3046\u3082\u3053\u3093\u306b\u3061\u306f",
-                        "comments_my_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\u3063\uff64\u4eca\u65e5\u306f\u4f55\u3092\u3057\u307e\u3057\u3087\u3046\u304b\u3063",
-                        "comments_work_1": "\u7cbe\u4e00\u676f\u9811\u5f35\u308a\u307e\u3059\u3063",
-                        "comments_work_2": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3057\u305f\u3063",
-                        "comments_work_3": "\u3061\u3087\u3063\u3068\u6065\u305a\u304b\u3057\u3044\u304b\u3082\u2026",
-                        "comments_work_4": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\uff64\u60aa\u3044\u3068\u3053\u304c\u3042\u3063\u305f\u3089\u6559\u3048\u3066\u304f\u3060\u3055\u3044",
-                        "comments_work_max": "\u3088\u304b\u3063\u305f\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\u304c\u3044\u3066\u304f\u308c\u308b\u306a\u3089\u5b89\u5fc3\u2026",
-                        "comments_work_love_up": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\uff64\u3044\u3064\u3082\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3063",
-                        "comments_live": "\u7af6\u3046\u306e\u306f\u3042\u307e\u308a\u597d\u304d\u3058\u3083\u2026",
-                        "comments_love_max": "\uff71\uff72\uff84\uff9e\uff99\u3092\u76ee\u6307\u3059\u306e\uff64\uff8e\uff9d\uff84\u306f\u3061\u3087\u3063\u3068\u6016\u304b\u3063\u305f\u3093\u3067\u3059\uff61\u3067\u3082\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\u304c\u652f\u3048\u3066\u304f\u308c\u308b\u304b\u3089\u79c1\u306f\u4eca\u65e5\u3082\u7b11\u9854\u3067\u3059\u3063"
+                        "comment": "처음 뵙겠습니다, 프로듀서씨. 모든 팬들께서 상냥한 기분이 될 수 있도록, 미소를 짓게 만드는 아이돌을 목표로 하고 싶습니다. 잘 부탁 드립니다.",
+                        "comments_my_1": "멋진 날이 되었으면 좋겠네요",
+                        "comments_my_2": "항상 수고하십니다",
+                        "comments_my_3": "나, 제대로 하고 있는 걸까...?",
+                        "comments_my_4": "(이름)프로듀서, 좋은 아침입니다",
+                        "comments_my_max": "(이름)프로듀서, 오늘은 무엇을 하나요",
+                        "comments_work_1": "열심히 하겠습니다",
+                        "comments_work_2": "감사합니다",
+                        "comments_work_3": "조금 부끄러울지도...",
+                        "comments_work_4": "(이름)프로듀서, 좋지 않은 부분이 있다면 가르쳐주세요",
+                        "comments_work_max": "다행이다, (이름)프로듀서께서 계신다면 안심...",
+                        "comments_work_love_up": "(이름)프로듀서, 언제나 감사합니다.",
+                        "comments_live": "경쟁은 좋아하지 않지만...",
+                        "comments_love_max": "아이돌을 목표로 하는 것, 사실은 조금 두려웠어요. 그렇지만 (이름)프로듀서께서 지탱해주신 덕분에 오늘도 전 웃는 얼굴이에요"
                     },
                     "voice": {
                         "comment": "5f46c26436eed7cbf6bb6b52be22b520.mp4",
@@ -767,7 +776,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "타카모리 아이코+",
                         "rarity": "2",
                         "cost": "2",
                         "attribute": "passion",
@@ -778,25 +787,25 @@ kg
                         "default_defense": "192",
                         "hash_card_id": "57bfd18f73cf672d05643716f74bbc48",
                         "alias_name": "",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3100202",
-                        "card_name": "\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\uff8c\uff67\uff9d\u306e\u307f\u306a\u3055\u3093\u306e\u7b11\u9854\uff64\u4e00\u4eba\u4e00\u4eba\u3061\u3083\u3093\u3068\u899a\u3048\u308b\u3088\u3046\u306b\u3057\u3066\u308b\u3093\u3067\u3059\uff61\u3064\u3089\u304f\u3066\u3082\u305d\u308c\u3092\u601d\u3044\u51fa\u305b\u3070\uff64\u3044\u3064\u3067\u3082\u5e78\u305b\u306a\u6c17\u6301\u3061\u306b\u306a\u308c\u307e\u3059\u304b\u3089\u306d\u3063\uff61\u5e78\u305b\u306a\u6c17\u6301\u3061\uff64\u5927\u4e8b\u3067\u3059\u3063\uff61",
@@ -844,7 +853,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d]타카모리 아이코",
                         "rarity": "1",
                         "cost": "10",
                         "attribute": "passion",
@@ -855,25 +864,25 @@ kg
                         "default_defense": "1360",
                         "hash_card_id": "8406433757bac86ef8134cd59ed4cd3b",
                         "alias_name": "\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3002101",
-                        "card_name": "[\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u5927\u5207\u306a\uff72\uff8d\uff9e\uff9d\uff84\u306e\u8a18\u5ff5\u65e5\u3092\u5199\u771f\u306b\u304a\u3055\u3081\u3088\u3046\u304b\u3068\u601d\u3063\u3066\uff64\uff76\uff92\uff97\u3092\u6301\u3063\u3066\u304d\u305f\u3093\u3067\u3059\u3088\uff61\u307f\u3093\u306a\u3067\u697d\u3057\u304f\u904e\u3054\u305b\u308c\u3070\u3044\u3044\u306a\u3063\u3066\u601d\u3063\u3066\u2026\u3060\u304b\u3089\u307b\u3089\uff64\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\u3055\u3093\u3082\u4e00\u7dd2\u306b\u7b11\u3063\u3066\u304f\u3060\u3055\u3044",
@@ -921,7 +930,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d]타카모리 아이코+",
                         "rarity": "2",
                         "cost": "10",
                         "attribute": "passion",
@@ -932,25 +941,25 @@ kg
                         "default_defense": "1632",
                         "hash_card_id": "55f34023e9d773f97afde9bb99574843",
                         "alias_name": "\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3102102",
-                        "card_name": "[\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\uff8a\uff6f\uff8b\uff9f\uff70\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d!! \u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u307f\u306a\u3055\u3093\u306b\uff81\uff6e\uff7a\uff9a\uff70\uff84\u3092\u5c4a\u3051\u307e\u3059\u306d! \u79c1\u306e\uff81\uff6e\uff7a\uff9a\uff70\uff84\u3067\u307f\u3093\u306a\u3092\u5e78\u305b\u306b\u3057\u305f\u3044\u3093\u3067\u3059\uff61\u2026\u79c1\u306e\u308f\u304c\u307e\u307e\u3067\u3059\u3051\u3069\u2026\u805e\u3044\u3066\u3044\u305f\u3060\u3051\u307e\u3059\u304b?",
@@ -1004,7 +1013,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99]타카모리 아이코",
                         "rarity": "3",
                         "cost": "12",
                         "attribute": "passion",
@@ -1015,25 +1024,25 @@ kg
                         "default_defense": "1920",
                         "hash_card_id": "f70f143d7bb856a67cb7bbd175dc7829",
                         "alias_name": "\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3204601",
-                        "card_name": "[\u3075\u3093\u308f\u308a\u30ac\u30fc\u30eb]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u3075\u3093\u308f\u308a\u30ac\u30fc\u30eb]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u98a8\u304c\u6c17\u6301\u3061\u826f\u3044\u3063! \u3053\u3093\u306a\u65e5\u306f\u304a\u6563\u6b69\u3057\u305f\u3044\u3067\u3059\u306d\uff61\u3067\u3082\uff64\u3059\u3050\u306b\u304a\u4ed5\u4e8b\u306e\u6642\u9593\u304c\u6765\u3061\u3083\u3046\u304b\u3089\u3086\u3063\u304f\u308a\u3067\u304d\u306a\u3044\u304b\u306a? \u3067\u3082\u3044\u3044\u3093\u3067\u3059\uff61\u79c1\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3068\u306e\u304a\u4ed5\u4e8b\uff64\u597d\u304d\u3067\u3059\u304b\u3089!",
@@ -1081,7 +1090,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "12",
                         "attribute": "passion",
@@ -1092,25 +1101,25 @@ kg
                         "default_defense": "2304",
                         "hash_card_id": "d6dbb1e8e2c5e452026e993c5a8fde56",
                         "alias_name": "\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3304602",
-                        "card_name": "[\u3075\u3093\u308f\u308a\u30ac\u30fc\u30eb]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u3075\u3093\u308f\u308a\u30ac\u30fc\u30eb]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u79c1\uff64\uff97\uff72\uff8c\uff9e\u306f\uff8c\uff67\uff9d\u306e\u65b9\u3092\u8eab\u8fd1\u306b\u611f\u3058\u3089\u308c\u308b\u304b\u3089\u597d\u304d\u306a\u3093\u3067\u3059! \u307b\u3089\uff64\u79c1\u305f\u3061\u3092\u547c\u3076\u58f0\u304c\u3042\u3093\u306a\u306b\u5927\u304d\u304f\u805e\u3053\u3048\u308b\uff61\u884c\u3063\u3066\u304d\u307e\u3059\u306d! \uff8c\uff67\uff9d\u306e\u307f\u3093\u306a\u3068\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306e\u305f\u3081\u306b\u6b4c\u3063\u3066\u304d\u307e\u3059\u3063!",
@@ -1164,7 +1173,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70]타카모리 아이코",
                         "rarity": "3",
                         "cost": "10",
                         "attribute": "passion",
@@ -1175,25 +1184,25 @@ kg
                         "default_defense": "1800",
                         "hash_card_id": "a14b13704b20edf9834c27832fd1670f",
                         "alias_name": "\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3207601",
-                        "card_name": "[\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u30a4\u30a8\u30ed\u30fc]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u30a4\u30a8\u30ed\u30fc]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u307f\u3093\u306a\u3067\u8a18\u5ff5\u65e5\u3092\u304a\u795d\u3044\u3059\u308b\u3063\u3066\u805e\u3044\u305f\u3093\u3067\u3059\u3051\u3069\u2026\u306a\u3093\u3060\u304b\u4e0d\u601d\u8b70\u306a\u611f\u3058\u304c\u3057\u307e\u3059\u306d\uff61\u79c1\u304c\uff71\uff72\uff84\uff9e\uff99\u306b\u306a\u3063\u3066\u3082\u3046\u305d\u3093\u306a\u306b\u7d4c\u3063\u305f\u306a\u3093\u3066\u2026\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3082\u305d\u3046\u601d\u3044\u307e\u305b\u3093\u304b?",
@@ -1247,7 +1256,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "10",
                         "attribute": "passion",
@@ -1258,25 +1267,25 @@ kg
                         "default_defense": "2160",
                         "hash_card_id": "d0289c681ff7668957a4d7a4198b61aa",
                         "alias_name": "\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3307602",
-                        "card_name": "[\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u30a4\u30a8\u30ed\u30fc]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u30a4\u30a8\u30ed\u30fc]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u79c1\u2026\u3053\u306e\uff7d\uff83\uff70\uff7c\uff9e\u3067\u307f\u3093\u306a\u3068LIVE\u51fa\u6765\u3066\uff64\u672c\u5f53\u306b\u5e78\u305b\u3067\u3059\uff61\u3053\u3093\u306a\u306b\u305f\u304f\u3055\u3093\u306e\uff8c\uff67\uff9d\u306b\u79c1\u305f\u3061\u306e\u6b4c\u3092\u8074\u3044\u3066\u3082\u3089\u3048\u308b\u306a\u3093\u3066\u2026\u80f8\u304c\u3044\u3063\u3071\u3044\u3067\u2026\uff61\u3084\u3063\u3071\u308a\uff71\uff72\uff84\uff9e\uff99\u306e\u304a\u4ed5\u4e8b\u3063\u3066\uff64\u697d\u3057\u3044\u3067\u3059\u3063!",
@@ -1324,7 +1333,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u65b0\u6625\uff76\uff9e\uff70\uff99]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u65b0\u6625\uff76\uff9e\uff70\uff99]타카모리 아이코",
                         "rarity": "3",
                         "cost": "14",
                         "attribute": "passion",
@@ -1335,25 +1344,25 @@ kg
                         "default_defense": "2640",
                         "hash_card_id": "ca354dc7b9ffa3261b69dfbcb633c162",
                         "alias_name": "\u65b0\u6625\uff76\uff9e\uff70\uff99",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3227201",
-                        "card_name": "[\u65b0\u6625\u30ac\u30fc\u30eb]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u65b0\u6625\u30ac\u30fc\u30eb]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u3053\u306e\u304a\u6b63\u6708\u98fe\u308a\u898b\u3066\u304f\u3060\u3055\u3044\u3063\uff61\u4eca\u5e74\u3082\uff64\u4e8b\u52d9\u6240\u306e\u307f\u3093\u306a\u304c\u5065\u5eb7\u306b\u3059\u3054\u305b\u307e\u3059\u3088\u3046\u306b\u3063\u3066\uff64\u6c17\u6301\u3061\u3092\u8fbc\u3081\u3066\u4f5c\u3063\u3066\u307f\u307e\u3057\u305f\uff61\u3060\u304b\u3089\uff64\u4e8b\u52d9\u6240\u306b\u98fe\u3063\u3066\u304a\u304d\u307e\u3059\u306d\uff61\u3048\u3078\u3063\u266a",
@@ -1401,7 +1410,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u65b0\u6625\uff76\uff9e\uff70\uff99]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u65b0\u6625\uff76\uff9e\uff70\uff99]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "14",
                         "attribute": "passion",
@@ -1412,25 +1421,25 @@ kg
                         "default_defense": "3168",
                         "hash_card_id": "d3fa350883bd59a8245cef6a04319057",
                         "alias_name": "\u65b0\u6625\uff76\uff9e\uff70\uff99",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3327202",
-                        "card_name": "[\u65b0\u6625\u30ac\u30fc\u30eb]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u65b0\u6625\u30ac\u30fc\u30eb]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u5e74\u304c\u660e\u3051\u3066\u3082\uff64\u5bd2\u3044\u65e5\u304c\u7d9a\u304d\u307e\u3059\u3051\u3069\u2026\u4eca\u65e5\u306f\u4e00\u8db3\u65e9\u304f\uff64\u79c1\u305f\u3061\u304c\u6696\u304b\u306a\u6625\u3092\u304a\u5c4a\u3051\u3057\u307e\u3059\uff61\uff8c\uff67\uff9d\u306e\u7686\u3055\u3093\u3082\uff64\u4eca\u65e5\u306eLIVE\u3067\u5fc3\u3068\u8eab\u4f53\u3092\u6696\u3081\u3066\u304f\u3060\u3055\u3044\u306d\u3063\uff61\u305d\u308c\u3058\u3083\uff64\u5143\u6c17\u3044\u3063\u3071\u3044\u6b4c\u3044\u307e\u3059\u3063!",
@@ -1478,7 +1487,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70]타카모리 아이코",
                         "rarity": "3",
                         "cost": "14",
                         "attribute": "passion",
@@ -1489,24 +1498,24 @@ kg
                         "default_defense": "2740",
                         "hash_card_id": "c827dabc28f2d3301d22ec465998046f",
                         "alias_name": "\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3242201",
-                        "card_name": "[\u307d\u304b\u307d\u304b\u30a8\u30b3\u30ed\u30b8\u30fc]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u307d\u304b\u307d\u304b\u30a8\u30b3\u30ed\u30b8\u30fc]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
                         "card_cv": null
                     },
                     "comments": {
@@ -1555,7 +1564,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "14",
                         "attribute": "passion",
@@ -1566,24 +1575,24 @@ kg
                         "default_defense": "3288",
                         "hash_card_id": "716d5b068391df79655b56bfa34a3ed5",
                         "alias_name": "\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3342202",
-                        "card_name": "[\u307d\u304b\u307d\u304b\u30a8\u30b3\u30ed\u30b8\u30fc]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u307d\u304b\u307d\u304b\u30a8\u30b3\u30ed\u30b8\u30fc]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
                         "card_cv": null
                     },
                     "comments": {
@@ -1632,7 +1641,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코",
                         "rarity": "5",
                         "cost": "17",
                         "attribute": "passion",
@@ -1643,25 +1652,25 @@ kg
                         "default_defense": "3160",
                         "hash_card_id": "6efffe43696b87d64380769c40a3f12d",
                         "alias_name": "\u3086\u308b\u3075\u308f\u4e59\u5973",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3405201",
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u3068\u3063\u3066\u3082\u843d\u3061\u7740\u304f\u304a\u5e97\u3067\u3057\u3087? \u6700\u8fd1\u898b\u3064\u3051\u305f\u79c1\u306e\u304a\u6c17\u306b\u5165\u308a\u306e\uff76\uff8c\uff6a\u306a\u3093\u3067\u3059\uff61\uff71\uff72\uff84\uff9e\uff99\u3068\u3057\u3066\u5fd9\u3057\u3044\u306e\u3082\u5b09\u3057\u3044\u3067\u3059\u3051\u3069\uff64\u3053\u3046\u3057\u3066\u3086\u3063\u305f\u308a\u904e\u3054\u3059\u306e\u3082\u3044\u3044\u3068\u601d\u3044\u307e\u305b\u3093\u304b?",
@@ -1711,7 +1720,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "17",
                         "attribute": "passion",
@@ -1722,25 +1731,25 @@ kg
                         "default_defense": "3792",
                         "hash_card_id": "0321c8e5bf54a3c4602ee87bac727750",
                         "alias_name": "\u3086\u308b\u3075\u308f\u4e59\u5973",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3505202",
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u771f\u3063\u767d\u306a\uff84\uff9e\uff9a\uff7d\u3067\u2026\u3053\u3053\u306f\u5e7b\u60f3\u7684\u306a\u68ee\u306e\u4e2d\u2026\u3046\u3075\u3075\uff64\u3059\u3053\u3057\u4e0d\u601d\u8b70\u306a\u611f\u3058\u3067\u3059\u306d\uff61\u3067\u3082\u3059\u3050\u96a3\u306b\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u304c\u3044\u3066\u2026\u52d5\u7269\u305f\u3061\u306b\u3082\u795d\u798f\u3055\u308c\u3066\u308b\u307f\u305f\u3044\u3067\u2026\u5c0f\u3055\u306a\u5e78\u305b\u3092\u5b9f\u611f\u3057\u307e\u3059\u306d\u2026",
@@ -1788,7 +1797,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코",
                         "rarity": "5",
                         "cost": "18",
                         "attribute": "passion",
@@ -1799,25 +1808,25 @@ kg
                         "default_defense": "4180",
                         "hash_card_id": "b9c843a22dc3445a53c384de9948be97",
                         "alias_name": "\u6df1\u7dd1\u306e\u9b54\u5973",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3409001",
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u9ed2\u732b\u3055\u3093\uff64\uff8a\uff9b\uff73\uff68\uff9d\u3089\u3057\u3044\u7d20\u6575\u306a1\u679a\u3092\u3042\u308a\u304c\u3068\u3046\u3063\uff61\u3053\u3046\u3057\u3066\u65e5\u3005\uff64\u5c11\u3057\u305a\u3064\u5e78\u305b\u3092\u96c6\u3081\u3066\u308b\u3068\u601d\u3048\u3070\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3082\u5fc3\u304c\u6696\u304b\u304f\u306a\u308a\u307e\u305b\u3093\u304b? \u3044\u3064\u304b\u2026\u5e78\u305b\u3067\u5fc3\u304c\u6ea2\u308c\u3061\u3083\u3046\u304b\u3082\u2026\u266a",
@@ -1867,7 +1876,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "18",
                         "attribute": "passion",
@@ -1878,32 +1887,32 @@ kg
                         "default_defense": "5016",
                         "hash_card_id": "dab9960d2db1424d77af7ba448c77039",
                         "alias_name": "\u6df1\u7dd1\u306e\u9b54\u5973",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3509002",
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u3042\u3063\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u4eca\u65e5\u306e\u64ae\u5f71\u306f\u68ee\u306e\u9b54\u5973\u98a8\u3067\u3059\u306d\uff61\u9b54\u5973\u3063\u3066\u60aa\u3044\uff72\uff92\uff70\uff7c\uff9e\u3060\u3051\u3069\uff64\u9055\u3046\u304b\u3082\u2026\u3063\u3066\u601d\u3046\u3093\u3067\u3059\uff61\u3060\u3063\u3066\u2026\u79c1\u304c\u9b54\u5973\u3060\u3063\u305f\u3089\u7686\u304c\u7b11\u9854\u306b\u306a\u308c\u308b\u9b54\u6cd5\u3092\u4f7f\u3044\u305f\u3044\u3063\u3066\u601d\u3046\u304b\u3089\u2026",
                         "comments_my_1": "\u304b\u307c\u3061\u3083\uff64\u7f8e\u5473\u3057\u3044\u3067\u3059\u3088\u306d\u266a",
                         "comments_my_2": "\u63a7\u3048\u3081\u3067\u3059\u3051\u3069\uff64\u3044\u3044\u3093\u3067\u3059\u3063",
                         "comments_my_3": "\u68ee\u6797\u6d74\u6c17\u5206\u3067\u3059\u306d\u2026\u3075\u3045\u2026",
-                        "comments_my_4": "\u68ee\u306b\u3044\u305d\u3046\u3063\u3066\u8a00\u308f\u308c\u307e\u3059\u3051\u3069\u2026\u6771\u4eac\u751f\u307e\u308c\u306e\u6771\u4eac\u80b2\u3061\u3067\u2026",
+                        "comments_my_4": "\u68ee\u306b\u3044\u305d\u3046\u3063\u3066\u8a00\u308f\u308c\u307e\u3059\u3051\u3069\u2026도쿄\u751f\u307e\u308c\u306e도쿄\u80b2\u3061\u3067\u2026",
                         "comments_my_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306b\u306f\u5e78\u305b\u306e\u9b54\u6cd5\u3092\u304b\u3051\u3066\u3042\u3052\u305f\u3044\u3067\u3059\u306d\u3063",
                         "comments_work_1": "\u6bce\u65e5\u304a\u796d\u308a\u6c17\u5206\u3067\u697d\u3057\u304f\uff64\u3067\u3059",
                         "comments_work_2": "\u5e78\u305b\u306a\u2026\uff8a\uff9b\uff73\uff68\uff9d\u306e\u4e00\u65e5\u3092\u2026\u266a",
@@ -1946,7 +1955,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70]타카모리 아이코",
                         "rarity": "5",
                         "cost": "11",
                         "attribute": "passion",
@@ -1957,24 +1966,24 @@ kg
                         "default_defense": "2080",
                         "hash_card_id": "696e63ecba110164d3740efd5dab872a",
                         "alias_name": "CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3409701",
-                        "card_name": "[CD\u30c7\u30d3\u30e5\u30fc]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[CD\u30c7\u30d3\u30e5\u30fc]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
                         "card_cv": null
                     },
                     "comments": {
@@ -2025,7 +2034,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "11",
                         "attribute": "passion",
@@ -2036,24 +2045,24 @@ kg
                         "default_defense": "2496",
                         "hash_card_id": "e3d9a2ea1b5c8caec4250f08f4f5cc95",
                         "alias_name": "CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3509702",
-                        "card_name": "[CD\u30c7\u30d3\u30e5\u30fc]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[CD\u30c7\u30d3\u30e5\u30fc]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
                         "card_cv": null
                     },
                     "comments": {
@@ -2104,7 +2113,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91]타카모리 아이코",
                         "rarity": "5",
                         "cost": "19",
                         "attribute": "passion",
@@ -2115,25 +2124,25 @@ kg
                         "default_defense": "3520",
                         "hash_card_id": "a6a1581237e6048bae08c63a85e50e87",
                         "alias_name": "\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3411301",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u79c1\uff64\uff71\uff72\uff84\uff9e\uff99\u306b\u306a\u308b\u3068\u304d\u306b\u62b1\u3044\u305f\u6c17\u6301\u3061\u3092\uff64\u305a\u3063\u3068\u6301\u3063\u3066\u3044\u3088\u3046\u3063\u3066\u601d\u3063\u3066\u3044\u308b\u3093\u3067\u3059\uff61\uff8c\uff67\uff9d\u306e\u307f\u306a\u3055\u3093\u304c\u512a\u3057\u3044\u6c17\u6301\u3061\u306b\u306a\u308c\u308b\u3088\u3046\u306b\u2026\u3063\u3066\uff61\u305d\u308c\u304c\u79c1\u306e\u2026\uff71\uff72\uff84\uff9e\uff99\u3068\u3057\u3066\u306e\u7406\u60f3\u3067\u3059\u306d\uff61\u3075\u3075\u3063",
@@ -2171,7 +2180,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3411301",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코",
                         "from": "2014\/01\/30\/15:00",
                         "to": "2014\/07\/31\/12:00",
                         "limitless_flag": "0",
@@ -2186,7 +2195,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "19",
                         "attribute": "passion",
@@ -2197,25 +2206,25 @@ kg
                         "default_defense": "4224",
                         "hash_card_id": "77828bac52f87e72db028e70a0338c11",
                         "alias_name": "\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3511302",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u5922\u306f\u898b\u308b\u3082\u306e\u3058\u3083\u306a\u304f\u3066\uff64\u53f6\u3048\u308b\u3082\u306e\u3067\u3059\u3088\u306d\uff61\u3067\u3082\uff64\u5e78\u305b\u306a\u5922\u306a\u3089\u305a\u3063\u3068\u898b\u3066\u3044\u305f\u3044\u306a\u2026\uff61\uff8c\uff67\uff9d\u306e\u307f\u306a\u3055\u3093\u306b\u3082\u305d\u3046\u601d\u3063\u3066\u3082\u3089\u3048\u308b\u3088\u3046\u306b\uff64\u5922\u306e\uff7d\uff83\uff70\uff7c\uff9e\u3067\u8f1d\u3044\u3066\u304d\u307e\u3059\u306d! \u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093!",
@@ -2253,7 +2262,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3511302",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코+",
                         "from": "2014\/01\/30\/15:00",
                         "to": "2014\/07\/31\/12:00",
                         "limitless_flag": "0",
@@ -2268,7 +2277,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코",
                         "rarity": "5",
                         "cost": "16",
                         "attribute": "passion",
@@ -2279,25 +2288,25 @@ kg
                         "default_defense": "3540",
                         "hash_card_id": "e82199f18a2886519aa98a1a5ef46043",
                         "alias_name": "\u304a\u3055\u3093\u307d\u65e5\u548c",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3413101",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u3075\u3075\u3063\uff64\u3053\u3053\u306f\u307e\u3060\u3061\u3087\u3063\u3068\u51b7\u305f\u3044\u307f\u305f\u3044\uff61\u3067\u3082\uff64\u3082\u3046\u6625\u306e\u967d\u6c17\u306b\u5305\u307e\u308c\u3066\u3044\u308b\u304b\u3089\uff64\u3053\u306e\u6c34\u306e\u6e29\u5ea6\u3082\u6c17\u6301\u3061\u3044\u3044\u3067\u3059\u306d\u2026\uff61\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3082\uff64\u3044\u3063\u3057\u3087\u306b\u3044\u304b\u304c\u3067\u3059\u304b? \u307b\u3089\u3063\uff64\u3053\u3063\u3061\u3063",
@@ -2335,7 +2344,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3413101",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코",
                         "from": "2014\/04\/04\/15:00",
                         "to": "2017\/04\/21\/12:00",
                         "limitless_flag": "0",
@@ -2350,7 +2359,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "16",
                         "attribute": "passion",
@@ -2361,25 +2370,25 @@ kg
                         "default_defense": "4248",
                         "hash_card_id": "1a30af5fa8c952b1424a1dbb60269ff0",
                         "alias_name": "\u304a\u3055\u3093\u307d\u65e5\u548c",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3513102",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u79c1\u3092\u5f85\u3063\u3066\u304f\u308c\u308b\uff8c\uff67\uff9d\u306e\u307f\u306a\u3055\u3093\u306b\uff64\u6625\u98a8\u307f\u305f\u3044\u306a\u6b4c\u58f0\u3092\u304a\u5c4a\u3051\u3057\u305f\u3044\u306a\uff61\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3082\uff64\u898b\u5b88\u3063\u3066\u3066\u304f\u3060\u3055\u3044\u306d\uff61\u79c1\u304d\u3063\u3068\uff64\u307f\u306a\u3055\u3093\u306e\u5fc3\u306b\u82b1\u3092\u54b2\u304b\u305b\u3066\u304d\u307e\u3059\u304b\u3089\u2026\u3044\u3063\u3066\u304d\u307e\u3059\u3063",
@@ -2417,7 +2426,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3513102",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코+",
                         "from": "2014\/04\/04\/15:00",
                         "to": "2017\/04\/21\/12:00",
                         "limitless_flag": "0",
@@ -2434,7 +2443,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84]타카모리 아이코",
                         "rarity": "5",
                         "cost": "20",
                         "attribute": "passion",
@@ -2445,25 +2454,25 @@ kg
                         "default_defense": "4260",
                         "hash_card_id": "39c5e502a5ec2c962e1610098b6317cc",
                         "alias_name": "\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3419801",
-                        "card_name": "[\u307e\u3054\u3053\u308d\u30d7\u30ec\u30bc\u30f3\u30c8]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u307e\u3054\u3053\u308d\u30d7\u30ec\u30bc\u30f3\u30c8]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84\u3092\u9078\u3076\u3068\u304d\u306f\uff64\u76f8\u624b\u306e\u559c\u3076\u9854\u3092\u601d\u3044\u6d6e\u304b\u3079\u3066\u2026\u2026\u305d\u306e\u4eba\u304c\uff64\u4e00\u756a\u5e78\u305b\u306a\u6c17\u6301\u3061\u306b\u306a\u308c\u308b\u3082\u306e\u3092\uff64\u9078\u3093\u3067\u3042\u3052\u305f\u3044\u306a\u2026\u2026\uff61\u3067\u3082\uff64\u9078\u3093\u3067\u3044\u308b\u79c1\u3082\u3068\u3063\u3066\u3082\u5e78\u305b\u306a\u306e\u304c\uff64\u4e0d\u601d\u8b70",
@@ -2511,7 +2520,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "20",
                         "attribute": "passion",
@@ -2522,25 +2531,25 @@ kg
                         "default_defense": "5112",
                         "hash_card_id": "0e80e42aa03acf28172a86a6113212e5",
                         "alias_name": "\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3519802",
-                        "card_name": "[\u307e\u3054\u3053\u308d\u30d7\u30ec\u30bc\u30f3\u30c8]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u307e\u3054\u3053\u308d\u30d7\u30ec\u30bc\u30f3\u30c8]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u8056\u306a\u308b\u591c\u306b\uff64\u307f\u3093\u306a\u306b\u5e78\u305b\u3092\u914d\u308b\u304a\u4ed5\u4e8b\u306a\u3093\u3066\u3059\u3066\u304d\u3067\u3059\u3088\u306d\uff61\u79c1\u3082\uff64\u64ae\u5f71\u3058\u3083\u306a\u304f\u3066\u672c\u5f53\u306b\u7a7a\u304c\u98db\u3079\u305f\u3089\u306a\u3041\u2026\uff61\u304d\u3063\u3068\uff64\u3069\u3053\u307e\u3067\u3082\u307f\u3093\u306a\u306b\u914d\u3063\u3066\u3044\u304f\u3068\u601d\u3044\u307e\u3059\uff61\u3075\u3075\u3063",
@@ -2590,7 +2599,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70]타카모리 아이코",
                         "rarity": "5",
                         "cost": "21",
                         "attribute": "passion",
@@ -2601,25 +2610,25 @@ kg
                         "default_defense": "5460",
                         "hash_card_id": "775f8939d540b7b1c169ba72be9ca25e",
                         "alias_name": "\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3425901",
-                        "card_name": "[\u653e\u8ab2\u5f8c\u30b5\u30de\u30fc]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u653e\u8ab2\u5f8c\u30b5\u30de\u30fc]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u590f\u306e\u65e5\u5dee\u3057\u304c\u2026\u7729\u3057\u3044\u3067\u3059\u306d\uff61\u3053\u306e\u65e5\u5dee\u3057\u306e\u7729\u3057\u3055\u3067\uff64\u79c1\u306e\u6c34\u7740\u59ff\u3082\u96a0\u3055\u308c\u3066\u3057\u307e\u3063\u305f\u3089\u3044\u3044\u306e\u306b\u2026\u306a\u3093\u3066\uff61\u3053\u3053\u307e\u3067\u304d\u305f\u3089\uff64\u3082\u3046\uff64\u9003\u3052\u3089\u308c\u307e\u305b\u3093\u306d\uff61\u899a\u609f\uff64\u6c7a\u3081\u307e\u3059\u3063",
@@ -2667,7 +2676,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "21",
                         "attribute": "passion",
@@ -2678,25 +2687,25 @@ kg
                         "default_defense": "6552",
                         "hash_card_id": "c2f3cd2bd710cebb14c84f6a64d9949a",
                         "alias_name": "\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3525902",
-                        "card_name": "[\u653e\u8ab2\u5f8c\u30b5\u30de\u30fc]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u653e\u8ab2\u5f8c\u30b5\u30de\u30fc]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u307f\u306a\u3055\uff70\u3093! \u4eca\u65e5\u306f\u79c1\u305f\u3061\u304c\u6b4c\u3063\u3066\u8e0a\u3063\u3066\uff64\u307f\u306a\u3055\u3093\u306b\u5fd8\u308c\u3089\u308c\u306a\u3044\u601d\u3044\u51fa\uff64\u4f5c\u3063\u3061\u3083\u3044\u307e\u3059\u304b\u3089! \u3053\u3053\u306f\u5b66\u6821\u3060\u3051\u3069\u2026\u4eca\u65e5\u306f\u601d\u3044\u304d\u308a\u9a12\u3044\u3067\u304f\u3060\u3055\u3044\u306d\u3063! \u9752\u6625\u306e\uff92\uff84\uff9e\uff9a\uff70\uff64\uff7d\uff80\uff70\uff84\u3067\u3059\u3063\u266a",
@@ -2744,7 +2753,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84]타카모리 아이코",
                         "rarity": "5",
                         "cost": "22",
                         "attribute": "passion",
@@ -2755,25 +2764,25 @@ kg
                         "default_defense": "6100",
                         "hash_card_id": "96372916d89edc657240f71836f7dbb9",
                         "alias_name": "\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3434701",
-                        "card_name": "[\u99ff\u98a8\u306e\u30d0\u30f3\u30c7\u30c3\u30c8]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u99ff\u98a8\u306e\u30d0\u30f3\u30c7\u30c3\u30c8]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u88cf\u8def\u5730\u306b\u6f5c\u3080\uff64\u8155\u5229\u304d\u306e\u76d7\u8cca\u2026\u3044\u3064\u3082\u3068\u9055\u3046\u96f0\u56f2\u6c17\u306e\u5f79\u3067\u3059\u304b\u3089\uff64\u3057\u3063\u304b\u308a\u4e88\u7fd2\u3057\u3066\u304d\u307e\u3057\u305f\uff61\u3060\u304b\u3089\u64ae\u5f71\u3082\uff64\u304d\u3063\u3068\u4e0a\u624b\u304f\u3044\u304d\u307e\u3059\uff61\u300e\u3042\u307e\u308a\uff71\uff80\uff7c\u3092\uff64\uff85\uff92\u306a\u3044\u3067\u304f\u308c\u3088?\u300f\u2026\u3075\u3075\uff64\uff77\uff8f\u308a\u307e\u3057\u305f\u266a",
@@ -2821,7 +2830,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "22",
                         "attribute": "passion",
@@ -2832,25 +2841,25 @@ kg
                         "default_defense": "7320",
                         "hash_card_id": "cd741e8ee6028bb578bcbc5d55475390",
                         "alias_name": "\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3534702",
-                        "card_name": "[\u99ff\u98a8\u306e\u30d0\u30f3\u30c7\u30c3\u30c8]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u99ff\u98a8\u306e\u30d0\u30f3\u30c7\u30c3\u30c8]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u300e\u52c7\u8005\uff7b\uff8f\u306e\u61d0\u306b\u624b\u3092\u51fa\u3057\u305f\u305b\u3044\u3067\uff64\u3053\u3093\u306a\uff84\uff7a\uff9b\u307e\u3067\u6765\u308b\u306a\u3093\u3066\u306a\u3063!\u300f \u5143\u76d7\u8cca\u306f\u5fc3\u3092\u5165\u308c\u66ff\u3048\uff64\u52c7\u8005\u306e\u4ef2\u9593\u306b\u306a\u3063\u3066\u2026\uff61\uff8c\uff67\uff9d\uff80\uff7c\uff9e\uff70\u306a\u3089\u3067\u306f\u306e\uff64\u6fc0\u3057\u3044\uff71\uff78\uff7c\uff6e\uff9d\u2026\u5927\u5909\u3060\u3051\u3069\uff64\u6f14\u3058\u304d\u3063\u3066\u307f\u305b\u307e\u3059!",
@@ -2898,7 +2907,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코",
                         "rarity": "5",
                         "cost": "23",
                         "attribute": "passion",
@@ -2909,25 +2918,25 @@ kg
                         "default_defense": "5560",
                         "hash_card_id": "55ef16cfd44a6fdfb3709337f27e595f",
                         "alias_name": "\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3439301",
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u308f\u3041\uff5e\u266a\u307e\u3093\u4e38\u3082\u3075\u3082\u3075\u3067\u2026\u3072\u307e\u308f\u308a\u306e\u7a2e\u3092\u307b\u3063\u307a\u3044\u3063\u3071\u3044\u306b\u982c\u5f35\u3063\u3066\u2026\u3075\u3075\uff64\u6b32\u5f35\u308a\u3055\u3093\u3067\u3059\u306d\uff61\u307b\u3063\u307a\u304c\uff8c\uff9f\uff78\uff5e\u3063\u3066\u266a\u306a\u3093\u3060\u304b\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306b\u4f3c\u3066\u308b\u307f\u305f\u3044\uff61\u307b\u3089\uff64\u53ef\u611b\u3044\u3067\u3059\u3088\u3063",
@@ -2977,7 +2986,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "23",
                         "attribute": "passion",
@@ -2988,25 +2997,25 @@ kg
                         "default_defense": "6672",
                         "hash_card_id": "4d91dd57c123958c50421bb04076c240",
                         "alias_name": "\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3539302",
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u3042\uff64\u898b\u3064\u304b\u3063\u3061\u3083\u3044\u307e\u3057\u305f\u266a\uff8a\uff91\uff7d\uff80\uff70\u85cd\u5b50\u306f\uff79\uff70\uff7c\uff9e\u3092\u629c\u3051\u51fa\u3057\u3066\uff64\u6625\u306e\u304a\u5ead\u3092\u304a\u6563\u6b69\u4e2d\u3067\u3059\uff61\u3053\u306e\u304a\u5ead\u3067\u306f\uff64\u3069\u3093\u306a\u7d20\u6575\u306a\u51fa\u4f1a\u3044\u304c\u5f85\u3063\u3066\u3044\u308b\u306e\u304b\u306a\uff5e? \uff8b\uff8f\uff9c\uff98\u306e\u7a2e\u3088\u308a\u5927\u304d\u306a\u5e78\u305b\uff64\u898b\u3064\u3051\u307e\u3057\u3087\u3046\u266a",
@@ -3056,7 +3065,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코",
                         "rarity": "5",
                         "cost": "24",
                         "attribute": "passion",
@@ -3067,25 +3076,25 @@ kg
                         "default_defense": "5900",
                         "hash_card_id": "91056ece5730b448946fa9f5d1951de3",
                         "alias_name": "\u767d\u9280\u306e\u6b4c\u58f0",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3444801",
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u304a\u75b2\u308c\u69d8\u3067\u3059\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff61\u73fe\u5728\uff64\uff71\uff72\uff7a\u8266\u9577\u306f\u4f11\u61a9\u4e2d\u3067\u3042\u308a\u307e\u3059\u266a\u5730\u7403\u3092\u6551\u3046\u305f\u3081\uff64\u8266\u968a\u3092\u7387\u3044\u308b\u306a\u3093\u3066\u2026\u5927\u5f79\u3067\u3059\u3088\u306d\uff61\u3067\u3082\uff64\u81ea\u5206\u306e\uff8d\uff9f\uff70\uff7d\u3092\u5d29\u3055\u305a\uff64\u9032\u307f\u307e\u3059\uff61\u305f\u3068\u3048\u305d\u308c\u304c\uff64\u5b87\u5b99\u3067\u3082\u2026\u266a",
@@ -3135,7 +3144,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "24",
                         "attribute": "passion",
@@ -3146,25 +3155,25 @@ kg
                         "default_defense": "7080",
                         "hash_card_id": "834bc411cf8455fcbd9aded00697fcba",
                         "alias_name": "\u767d\u9280\u306e\u6b4c\u58f0",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3544802",
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u300e\u3042\u306a\u305f\u304c\u7d76\u671b\u3068\u7d42\u7109\u3092\u544a\u3052\u308b\u306e\u306a\u3089\u2026\u79c1\u305f\u3061\u306f\u6b4c\u3044\u307e\u3059! \u5e0c\u671b\u3068\u547d\u306e\u6b4c\u3092\uff64\u4f55\u5ea6\u3067\u3082!\u300f\u3044\u3088\u3044\u3088\uff78\uff97\uff72\uff8f\uff6f\uff78\uff7d\u3067\u3059\u306d\uff61\u9577\u304b\u3063\u305f\u9053\u306e\u308a\u2026\u3042\u308a\u3063\u305f\u3051\u306e\u601d\u3044\u3092\u8fbc\u3081\u3066\u6b4c\u3044\u307e\u3057\u3087\u3046\uff61\uff71\uff72\uff84\uff9e\uff99\u306e\u529b\u3067!",
@@ -3220,7 +3229,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]\u9ad8\u68ee\u85cd\u5b50",
+                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코",
                         "rarity": "5",
                         "cost": "24",
                         "attribute": "passion",
@@ -3231,25 +3240,25 @@ kg
                         "default_defense": "6020",
                         "hash_card_id": "bba927329abba72d970b384ebb4094fe",
                         "alias_name": "\u307b\u3093\u308f\u304b\u82b1\u5ac1",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50"
+                        "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3448401",
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]\u9ad8\u68ee\u85cd\u5b50",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u512a\u3057\u3044\u98a8\u304c\uff64\u68ee\u306e\u9999\u308a\u3092\u4e57\u305b\u3066\u2026\uff61\u307b\u3089\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff61\u68ee\u306e\u6728\u3005\u3082\u82b1\u305f\u3061\u3082\uff64\u79c1\u305f\u3061\u3092\u795d\u798f\u3057\u3066\u304f\u308c\u3066\u307e\u3059\u3088\u2026\u306a\u3093\u3066\uff64\u3075\u3075\u3063\u266a\u68ee\u306e\u6559\u4f1a\u3067\u64ae\u308b\uff73\uff6a\uff83\uff9e\uff68\uff9d\uff78\uff9e\uff8c\uff6b\uff84\uff64\u7d20\u6575\u306a\u4e00\u679a\u306b\u306a\u308a\u305d\u3046\u3067\u3059\u306d",
@@ -3299,7 +3308,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]\u9ad8\u68ee\u85cd\u5b50+",
+                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "24",
                         "attribute": "passion",
@@ -3310,25 +3319,25 @@ kg
                         "default_defense": "7224",
                         "hash_card_id": "b4bcd4a96f7cf55e96d9cfd6ce694ca9",
                         "alias_name": "\u307b\u3093\u308f\u304b\u82b1\u5ac1",
-                        "real_name": "\u9ad8\u68ee\u85cd\u5b50+"
+                        "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3548402",
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]\u9ad8\u68ee\u85cd\u5b50+",
-                        "card_kana": "\u305f\u304b\u3082\u308a\u3042\u3044\u3053",
+                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코+",
+                        "card_kana": "타카모리 아이코",
                         "card_age": "16",
-                        "card_from": "\u6771\u4eac",
+                        "card_from": "도쿄",
                         "card_height": "155",
                         "card_weight": "42",
                         "card_bust": "74",
                         "card_waist": "60",
                         "card_hip": "79",
-                        "card_birthday": "7\u670825\u65e5",
-                        "card_constellation": "\u7345\u5b50\u5ea7",
+                        "card_birthday": "07월 25일",
+                        "card_constellation": "사자자리",
                         "card_blood": "O",
-                        "card_arm": "\u53f3",
-                        "card_hobby": "\u8fd1\u6240\u306e\u516c\u5712\u3092\u304a\u6563\u6b69",
-                        "card_cv": "\u91d1\u5b50\u6709\u5e0c"
+                        "card_arm": "오른손잡이",
+                        "card_hobby": "인근의 공원을 산책하기",
+                        "card_cv": "카네코 유키"
                     },
                     "comments": {
                         "comment": "\u82b1\u5ac1\u3068\u3057\u3066\u7acb\u3064\u7d50\u5a5a\u5f0f\u306e\u821e\u53f0\u2026\u6b63\u76f4\uff64\u307e\u3060\u5b9f\u611f\u306f\u3042\u308a\u307e\u305b\u3093\uff61\u3067\u3082\uff64\u3086\u3063\u304f\u308a\u3068\u80b2\u3064\u7dd1\u306e\u3088\u3046\u306b\uff64\u7a4f\u3084\u304b\u306a\u6642\u9593\u3092\u5927\u5207\u306a\u4eba\u3068\u904e\u3054\u305b\u305f\u3089\u2026\u305d\u308c\u306f\u304d\u3063\u3068\uff64\u3068\u3063\u3066\u3082\u5e78\u305b\u306a\u3053\u3068\u3067\u3059\u3088\u306d\u266a",
@@ -3376,8 +3385,175 @@ kg
                     },
                     "is_exist_archive": true,
                     "is_max_love": true
+        }, {
+            "data": {
+                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코",
+                "rarity": "5",
+                "cost": "25",
+                "attribute": "passion",
+                "skill_name": "\u7a4d\u307f\u6728\u3042\u305d\u3073",
+                "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b\u5b88 \u8d85\u7d76\uff71\uff6f\uff8c\uff9f",
+                "grow_idol_flag": "",
+                "default_attack": "7420",
+                "default_defense": "7220",
+                "hash_card_id": "8f6d0eb1d230ebf622f0e72ae0f9bb12",
+                "alias_name": "\u304b\u3055\u306a\u308b\u601d\u3044\u51fa",
+                "real_name": "타카모리 아이코"
+            },
+            "profile": {
+                "card_id": "3454801",
+                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코",
+                "card_kana": "타카모리 아이코",
+                "card_age": "16",
+                "card_from": "도쿄",
+                "card_height": "155",
+                "card_weight": "42",
+                "card_bust": "74",
+                "card_waist": "60",
+                "card_hip": "79",
+                "card_birthday": "07월 25일",
+                "card_constellation": "사자자리",
+                "card_blood": "O",
+                "card_arm": "오른손잡이",
+                "card_hobby": "인근의 공원을 산책하기",
+                "card_cv": "카네코 유키"
+            },
+            "comments": {
+                "comment": "\u53ef\u611b\u3044\u304a\u3082\u3061\u3083\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u3088\uff61\u8d64\u3044\u7403\u3092\u8ee2\u304c\u3059\u3068\u2026\u307b\u3089\u3063\u266a\uff7a\uff9b\uff7a\uff9b\uff5e\u3063\u3066\uff64\u5742\u9053\u3092\u3086\u3063\u304f\u308a\u304a\u6563\u6b69\u3057\u3066\u3044\u304f\u3093\u3067\u3059\uff61\u306a\u3093\u3060\u304b\uff64\u307b\u3063\u3068\u3059\u308b\u5149\u666f\u3067\u3059\u3088\u306d\uff61\u3075\u3075\u3063\uff64\u5b50\u3069\u3082\u306b\u623b\u3063\u305f\u307f\u305f\u3044\u2026\u266a",
+                "comments_my_1": "\u5b50\u3069\u3082\u306e\u5fc3\u3067\uff64\u697d\u3057\u3093\u3067\u266a",
+                "comments_my_2": "\uff85\uff81\uff6d\uff97\uff99\u4ed5\u7acb\u3066\u3067\u5b89\u5fc3\u5b89\u5168\u3067\u3059\u3088",
+                "comments_my_3": "\u6e29\u304b\u3044\u8272\u2026\u3084\u3063\u3071\u308a\u597d\u304d\u3060\u306a\u3041",
+                "comments_my_4": "\u3046\u3061\u306b\u306f\uff64\u6728\u306e\u304a\u3082\u3061\u3083\u304c\u591a\u304f\u3066\uff61\uff85\uff81\uff6d\uff97\uff99\u597d\u304d\u306f\u89aa\u8b72\u308a\u306a\u306e\u304b\u3082",
+                "comments_my_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306f\uff64\u3069\u3093\u306a\u5b50\u3067\u3057\u305f? \u601d\u3044\u51fa\u8a71\uff64\u3057\u305f\u3044\u3067\u3059",
+                "comments_work_1": "\u6b21\u306f\uff64\u4f55\u3067\u904a\u3073\u307e\u3057\u3087\u3046\u266a",
+                "comments_work_2": "\uff9c\uff78\uff9c\uff78\u3059\u308b\u4ed5\u639b\u3051\u304c\uff64\u3044\uff5e\u3063\u3071\u3044!",
+                "comments_work_3": "\uff7c\uff9d\uff8c\uff9f\uff99\u3060\u304b\u3089\uff64\u98fd\u304d\u306a\u3044\u3093\u3067\u3059\u306d",
+                "comments_work_4": "\u6728\u306e\u808c\u89e6\u308a\u3082\uff64\u89d2\u304c\u4e38\u3044\u306e\u3082\u2026\u4f5c\u308a\u624b\u306e\u512a\u3057\u3055\u3092\u611f\u3058\u307e\u3059\u3088\u306d",
+                "comments_work_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u76ee\u304c\uff77\uff97\uff77\uff97\u3057\u3066\u307e\u3059\uff61\u79c1\u3082\u3067\u3059\u304b? \u3075\u3075\u3063",
+                "comments_work_love_up": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u8272\u3005\u8a66\u3057\u3066\u307f\u307e\u3057\u3087\u3046\uff61\u597d\u5947\u5fc3\u306e\u307e\u307e\u306b\u266a",
+                "comments_live": "\u3069\u3063\u3061\u304c\u5148\u306b\u8ee2\u304c\u308b\u304b\u306a?",
+                "comments_love_max": "\u304a\u3082\u3061\u3083\u7bb1\u307f\u305f\u3044\u306a\uff64\u7d20\u6575\u306a\u304a\u5e97\u3067\u3059\u3088\u306d\uff61\uff84\uff9e\uff77\uff84\uff9e\uff77\u3082\uff9c\uff78\uff9c\uff78\u3082\uff64\u5168\u90e8\u3042\u3063\u3066\u2026\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u304c\u304f\u308c\u308b\u6c17\u6301\u3061\u3068\u4e00\u7dd2\u3067\u3059\u3063\u266a"
+            },
+            "voice": {
+                "comment": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/f5e227c537421c410c7a130515d80c23.mp4",
+                "comments_my_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/71e45e687424b2cf680971a99eed3278.mp4",
+                "comments_my_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/746434a95119435bd260d89c1b1c0446.mp4",
+                "comments_my_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/3e90faeefc9535f28904a7eb71013099.mp4",
+                "comments_my_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/4645c8802143262c6073d26582f13316.mp4",
+                "comments_my_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/c7316d27bd65bf0bb8be23f44867a201.mp4",
+                "comments_work_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/87cb4f15b5d96bb2ab6f20654086b97e.mp4",
+                "comments_work_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/81205b1931ce97a16a7f2db649a715c3.mp4",
+                "comments_work_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/f87cfedc0414bc4e8426b6899792ca7a.mp4",
+                "comments_work_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/53daefb51540df18d44b3750c46f0bf9.mp4",
+                "comments_work_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/11b3aa01f5ef54a14cfd63c1000b346f.mp4",
+                "comments_work_love_up": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/89cd29430e8ba0cdc6883415d555c71b.mp4",
+                "comments_live": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/d21c37aaaca6135930dac1d38cdaf0ce.mp4",
+                "comments_love_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3454801\/416f3922d5ec913392146ec5f821201e.mp4"
+            },
+            "event": null,
+            "release": "",
+            "trade_prohibition": {
+                "is_trade_limit": false
+            },
+            "idol_search_param": "keyword=%E3%81%9F%E3%81%8B%E3%82%82%E3%82%8A%E3%81%82%E3%81%84%E3%81%93",
+            "premium_sign_idol_base_id": "135",
+            "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcjs%2Fpremium%2Fsign_effect_135.js%3Fv%3D20170222083916",
+            "archive": {
+                "normal": "1",
+                "premium": "1"
+            },
+            "is_exist_archive": true,
+            "is_max_love": true
+        }, {
+            "data": {
+                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코+",
+                "rarity": "6",
+                "cost": "25",
+                "attribute": "passion",
+                "skill_name": "\u7a4d\u307f\u6728\u3042\u305d\u3073",
+                "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b\u5b88 \u7a76\u6975\uff71\uff6f\uff8c\uff9f",
+                "grow_idol_flag": "",
+                "default_attack": "8904",
+                "default_defense": "8664",
+                "hash_card_id": "497db13df6dbfa90dd87102e6c2134bc",
+                "alias_name": "\u304b\u3055\u306a\u308b\u601d\u3044\u51fa",
+                "real_name": "타카모리 아이코+"
+            },
+            "profile": {
+                "card_id": "3554802",
+                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코+",
+                "card_kana": "타카모리 아이코",
+                "card_age": "16",
+                "card_from": "도쿄",
+                "card_height": "155",
+                "card_weight": "42",
+                "card_bust": "74",
+                "card_waist": "60",
+                "card_hip": "79",
+                "card_birthday": "07월 25일",
+                "card_constellation": "사자자리",
+                "card_blood": "O",
+                "card_arm": "오른손잡이",
+                "card_hobby": "인근의 공원을 산책하기",
+                "card_cv": "카네코 유키"
+            },
+            "comments": {
+                "comment": "\u300e\u3058\u3083\uff5e\u3093\uff64\u7a4d\u307f\u4e0a\u304c\u308a\u307e\u3057\u305f! \u5927\u304d\u306a\u304a\u57ce\u306e\u5b8c\u6210\u3067\u3059\u266a\u300f\u3075\u3075\uff64\u5b50\u3069\u3082\u305f\u3061\u306e\u559c\u3076\u58f0\u304c\u805e\u3053\u3048\u3066\u304d\u305d\u3046\u266a\u304a\u3082\u3061\u3083\u3092\u5927\u597d\u304d\u306b\u306a\u3063\u3066\u3082\u3089\u3048\u308b\u3088\u3046\u306b\uff64\u5922\u3044\u3063\u3071\u3044\u306e\u4e16\u754c\u3092\u7a4d\u307f\u4e0a\u3052\u307e\u3059\u3063",
+                "comments_my_1": "\u5b50\u3069\u3082\u306e\u5fc3\u3067\uff64\u697d\u3057\u3093\u3067\u266a",
+                "comments_my_2": "\uff85\uff81\uff6d\uff97\uff99\u4ed5\u7acb\u3066\u3067\u5b89\u5fc3\u5b89\u5168\u3067\u3059\u3088",
+                "comments_my_3": "\u7a4d\u307f\u6728\u306e\u4e16\u754c\u3078\u3054\u62db\u5f85\u266a",
+                "comments_my_4": "\u304a\u3082\u3061\u3083\u3082\uff71\uff72\uff84\uff9e\uff99\u3082\uff64\u8ab0\u304b\u3092\u7b11\u9854\u306b\u3059\u308b\u305f\u3081\u306e\u5b58\u5728\u2026\u540c\u3058\u3067\u3059\u306d",
+                "comments_my_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306e\u304a\u597d\u304d\u306a\u3088\u3046\u306b\u7d44\u307f\u5408\u308f\u305b\u3066\u304f\u3060\u3055\u3044\u306d\u3063",
+                "comments_work_1": "\u6b21\u306f\uff64\u4f55\u3067\u904a\u3073\u307e\u3057\u3087\u3046\u266a",
+                "comments_work_2": "\uff9c\uff78\uff9c\uff78\u3059\u308b\u4ed5\u639b\u3051\u304c\uff64\u3044\uff5e\u3063\u3071\u3044!",
+                "comments_work_3": "\u300e\uff78\uff99\uff78\uff99\uff64\uff8e\uff9f\uff9d\u266a\u306f\u3044\uff64\u3067\u304d\u305f\u3063\u300f",
+                "comments_work_4": "\u300e\u79c1\u305f\u3061\u306e\u53ef\u80fd\u6027\u306f\uff64\u7121\u9650\u5927\u3067\u3059\u266a\u3055\u3042\uff64\u7a4d\u307f\u4e0a\u3052\u307e\u3057\u3087\u3046!\u300f",
+                "comments_work_max": "\u307f\u306a\u3055\u3093\u3068\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306e\u7b11\u9854\u304c\u79c1\u306e\u529b\u306b\u306a\u308a\u307e\u3059\u304b\u3089!",
+                "comments_work_love_up": "\u7a4d\u307f\u4e0a\u3052\u307e\u3057\u3087\u3046\uff61\u79c1\u3068\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u2026\u3075\u305f\u308a\u306e\u5922\u3092\u266a",
+                "comments_live": "\uff82\uff9d\uff82\uff9d\u3057\u305f\u3089\uff64\uff92\uff6f\u266a\u3067\u3059\u3088\u3063!",
+                "comments_love_max": "\u3072\u3068\u3064\u3072\u3068\u3064\u7a4d\u307f\u4e0a\u3052\u308c\u3070\uff64\u304d\u3063\u3068\u60f3\u50cf\u3057\u305f\u4e16\u754c\u304c\u898b\u3048\u3066\u304d\u307e\u3059\uff61\u79c1\u305f\u3061\u3082\uff64\u5fc3\u3092\u5408\u308f\u305b\u3066\u2026\u5922\u307f\u308b\u4e16\u754c\u3092\u4f5c\u308a\u307e\u3057\u3087\u3046\u306d\u266a"
+            },
+            "voice": {
+                "comment": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/287c697740343a818c009fa7567a41c4.mp4",
+                "comments_my_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/0195d53d3ad91499094471f4d576ceaa.mp4",
+                "comments_my_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/8337233cae8980081cfbd18e965c8106.mp4",
+                "comments_my_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/f93a3fea0c7daba74587c38b4058eded.mp4",
+                "comments_my_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/ae826f06072dc817c9d48e80d433ef94.mp4",
+                "comments_my_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/f46151552098e2f219546f7bb8095aca.mp4",
+                "comments_work_1": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/f5863bbcc08ba4f2bf8a5f425ce77dc2.mp4",
+                "comments_work_2": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/90e4c833451de0911011162d86205436.mp4",
+                "comments_work_3": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/c4ac632435cc21e112ff6e0d7bd8a6a3.mp4",
+                "comments_work_4": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/c2de6fdbb5b1d753b8ce61188c766010.mp4",
+                "comments_work_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/f8ba411f39ab285be2ede06d49f83a3e.mp4",
+                "comments_work_love_up": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/4b20a35820a85bbb6e8d56c2b83fa57b.mp4",
+                "comments_live": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/3454f77b898de83efc949fff43ac4db8.mp4",
+                "comments_love_max": "http:\/\/idolmaster.edgesuite.net\/idolmaster\/sound\/3554802\/38f76d69f580c4605c1b1aab3b354ecc.mp4"
+            },
+            "event": null,
+            "release": "",
+            "trade_prohibition": {
+                "is_trade_limit": false
+            },
+            "idol_search_param": "keyword=%E3%81%9F%E3%81%8B%E3%82%82%E3%82%8A%E3%81%82%E3%81%84%E3%81%93",
+            "premium_sign_idol_base_id": "135",
+            "js_premium_sign": "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcjs%2Fpremium%2Fsign_effect_135.js%3Fv%3D20170222083916",
+            "archive": {
+                "normal": "1",
+                "premium": "1"
+            },
+            "is_exist_archive": true,
+            "is_max_love": true
                 }];
                 idol.idol_story_list = [{
+            "story_id": "352",
+            "story_title": "\u304b\u3055\u306a\u308b\u601d\u3044\u51fa",
+            "voice_enable": ["1", "1"],
+            "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F352%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D260004051", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F352%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D458363204"],
+            "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F352%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D849592827", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F352%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D845542109"],
+            "open_flag": ["1", "1"],
+            "icon": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fbase%2F135.jpg%3Fv%3D20170331174845", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_movie_352_2.jpg%3Fv%3D20190524145750"],
+            "movie_name_voice": ["http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_passion_early.png%3Fv%3D20170222083837", "http:\/\/sp.pf-img-a.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fepisode%2Fepi_button_moviename_passion_late.png%3Fv%3D20170222083837"]
+        }, {
                     "story_id": "288",
                     "story_title": "\u3057\u3042\u308f\u305b\u8a93\u3046\u266a\u30c8\u30ad\u30e1\u30ad\u30d6\u30e9\u30a4\u30c0\u30eb",
                     "voice_enable": {
@@ -3385,8 +3561,8 @@ kg
                         "5": "1"
                     },
                     "flash_path": {
-                        "2": "bride_bc.html",
-                        "5": "bride_ba.html"
+                        "2": "bride_bc/",
+                        "5": "bride_ba/"
                     },
                     "voice_url": {
                         "2": "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F288%2F3%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D193090029",
@@ -3600,7 +3776,9 @@ kg
 						  "91056ece5730b448946fa9f5d1951de3_card.jpg",
 						  "834bc411cf8455fcbd9aded00697fcba_card.jpg",
 						  "bba927329abba72d970b384ebb4094fe_card.jpg",
-						  ""],
+						  "",
+						  "8f6d0eb1d230ebf622f0e72ae0f9bb12_card.jpg",
+						  "497db13df6dbfa90dd87102e6c2134bc_card.jpg"],
                     "l_premium": {
                         "12": "6efffe43696b87d64380769c40a3f12d_kira.jpg",
                         "14": "b9c843a22dc3445a53c384de9948be97_kira.jpg",
@@ -3614,8 +3792,10 @@ kg
                         "30": "91056ece5730b448946fa9f5d1951de3_kira.jpg",
                         "31": "834bc411cf8455fcbd9aded00697fcba_kira.jpg",
                         "32": "bba927329abba72d970b384ebb4094fe_kira.jpg",
-                        "33": "b4bcd4a96f7cf55e96d9cfd6ce694ca9_kira.jpg"
-                    },
+                        "33": "b4bcd4a96f7cf55e96d9cfd6ce694ca9_kira.jpg",
+						"34": "8f6d0eb1d230ebf622f0e72ae0f9bb12_kira.jpg",
+						"35": "497db13df6dbfa90dd87102e6c2134bc_kira.jpg"
+					},
                     "l_nosign": ["","","","","","","","","","","","",
 						"6efffe43696b87d64380769c40a3f12d_nokira_nosign.jpg",
 						"0321c8e5bf54a3c4602ee87bac727750_nokira_nosign.jpg",
@@ -3638,7 +3818,9 @@ kg
 						"91056ece5730b448946fa9f5d1951de3_nokira_nosign.jpg",
 						"834bc411cf8455fcbd9aded00697fcba_nokira_nosign.jpg",
 						"bba927329abba72d970b384ebb4094fe_nokira_nosign.jpg",
-						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_nokira_nosign.jpg"],
+						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_nokira_nosign.jpg",
+			            "8f6d0eb1d230ebf622f0e72ae0f9bb12_nokira_nosign.jpg",
+						"497db13df6dbfa90dd87102e6c2134bc_nokira_nosign.jpg"],
                     "l_nosign_p": {
                         "12": "6efffe43696b87d64380769c40a3f12d_kira_nosign.jpg",
                         "14": "b9c843a22dc3445a53c384de9948be97_kira_nosign.jpg",
@@ -3652,8 +3834,10 @@ kg
                         "30": "91056ece5730b448946fa9f5d1951de3_kira_nosign.jpg",
                         "31": "834bc411cf8455fcbd9aded00697fcba_kira_nosign.jpg",
                         "32": "bba927329abba72d970b384ebb4094fe_kira_nosign.jpg",
-                        "33": "b4bcd4a96f7cf55e96d9cfd6ce694ca9_kira_nosign.jpg"
-                    },
+                        "33": "b4bcd4a96f7cf55e96d9cfd6ce694ca9_kira_nosign.jpg",
+						"34": "8f6d0eb1d230ebf622f0e72ae0f9bb12_kira_nosign.jpg",
+						"35": "497db13df6dbfa90dd87102e6c2134bc_kira_nosign.jpg"
+					},
                     "l_noframe": [null, null, null, null, null, null, null, null, null, null, null, null, "6efffe43696b87d64380769c40a3f12d_noframe.jpg",
 						"0321c8e5bf54a3c4602ee87bac727750_noframe.jpg",
 						"b9c843a22dc3445a53c384de9948be97_noframe.jpg",
@@ -3675,9 +3859,11 @@ kg
 						"91056ece5730b448946fa9f5d1951de3_noframe.jpg",
 						"834bc411cf8455fcbd9aded00697fcba_noframe.jpg",
 						"bba927329abba72d970b384ebb4094fe_noframe.jpg",
-						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_noframe.jpg"],
-                    "mask_l": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-                    "mask_l2": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_noframe.jpg",
+						"8f6d0eb1d230ebf622f0e72ae0f9bb12_noframe.jpg",
+						"497db13df6dbfa90dd87102e6c2134bc_noframe.jpg"],
+					"mask_l": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+					"mask_l2": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
                     "mask_l_p": [],
                     "mask_l2_p": [],
                     "xs": ["25ea7fdd66fc6bd8e7209a4c0d2ba00c_xs.jpg",
@@ -3713,7 +3899,9 @@ kg
 						"91056ece5730b448946fa9f5d1951de3_xs.jpg",
 						"834bc411cf8455fcbd9aded00697fcba_xs.jpg",
 						"bba927329abba72d970b384ebb4094fe_xs.jpg",
-						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_xs.jpg"],
+						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_xs.jpg",
+			            "8f6d0eb1d230ebf622f0e72ae0f9bb12_xs.jpg",
+						"497db13df6dbfa90dd87102e6c2134bc_xs.jpg"],
                     "m2": ["25ea7fdd66fc6bd8e7209a4c0d2ba00c_m2.jpg",
 						"57bfd18f73cf672d05643716f74bbc48_m2.jpg",
 						"8406433757bac86ef8134cd59ed4cd3b_m2.jpg",
@@ -3747,7 +3935,9 @@ kg
 						"91056ece5730b448946fa9f5d1951de3_m2.jpg",
 						"834bc411cf8455fcbd9aded00697fcba_m2.jpg",
 						"bba927329abba72d970b384ebb4094fe_m2.jpg",
-						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_m2.jpg"],
+						"b4bcd4a96f7cf55e96d9cfd6ce694ca9_m2.jpg",
+			            "8f6d0eb1d230ebf622f0e72ae0f9bb12_m2.jpg",
+						"497db13df6dbfa90dd87102e6c2134bc_m2.jpg"],
                     "quest": ["quest%2F25ea7fdd66fc6bd8e7209a4c0d2ba00c_quest.png",
 						"quest%2F57bfd18f73cf672d05643716f74bbc48_quest.png",
 						"quest%2F8406433757bac86ef8134cd59ed4cd3b_quest.png",
@@ -3781,7 +3971,9 @@ kg
 						"quest%2F91056ece5730b448946fa9f5d1951de3_quest.jpg",
 						"quest%2F834bc411cf8455fcbd9aded00697fcba_quest.jpg",
 						"quest%2Fbba927329abba72d970b384ebb4094fe_quest.jpg",
-						"quest%2Fb4bcd4a96f7cf55e96d9cfd6ce694ca9_quest.jpg"]
+						"quest%2Fb4bcd4a96f7cf55e96d9cfd6ce694ca9_quest.jpg",
+			            "quest%2F8f6d0eb1d230ebf622f0e72ae0f9bb12_quest.jpg",
+						"quest%2F497db13df6dbfa90dd87102e6c2134bc_quest.jpg"]
                 };
                 idol.ios_app_flg = false;
                 idol.apple_review = null;
