@@ -1263,7 +1263,7 @@ section {
 
 .common_line_solid {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe-sbb949863bf.png%3F1531115213) no-repeat 0 -112px;
+    background: url(frame-sbb949863bf.png) no-repeat 0 -112px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 299px;
@@ -1308,7 +1308,7 @@ section {
     content: '';
     display: block;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe-sbb949863bf.png%3F1531115213) no-repeat 0 -42px;
+    background: url(frame-sbb949863bf.png) no-repeat 0 -42px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 35px;
@@ -1326,7 +1326,7 @@ section {
     content: '';
     display: block;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe-sbb949863bf.png%3F1531115213) no-repeat 0 -70px;
+    background: url(frame-sbb949863bf.png) no-repeat 0 -70px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 35px;
@@ -1352,7 +1352,7 @@ section {
     content: '';
     display: block;
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe-sbb949863bf.png%3F1531115213) no-repeat 0 -106px;
+    background: url(frame-sbb949863bf.png) no-repeat 0 -106px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 299px;
@@ -1390,7 +1390,7 @@ section {
 .area-frame_common .area-frame_bg_image {
     width: 304px;
     height: 100%;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe%2Fbody.png%3F1487720313) repeat-y;
+    background: url(body.png) repeat-y;
     background-size: 304px 1px;
     position: absolute;
     top: 0px;
@@ -1400,7 +1400,7 @@ section {
 .area-frame_common:before {
     content: '';
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe-sbb949863bf.png%3F1531115213) no-repeat 0 -21px;
+    background: url(frame-sbb949863bf.png) no-repeat 0 -21px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 304px;
@@ -1416,7 +1416,7 @@ section {
 .area-frame_common:after {
     content: '';
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe-sbb949863bf.png%3F1531115213) no-repeat 0 0;
+    background: url(frame-sbb949863bf.png) no-repeat 0 0;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 304px;
@@ -1518,7 +1518,7 @@ section {
 
 .area-frame_common .area-frame_line_dot {
     display: block;
-    background: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fframe-sbb949863bf.png%3F1531115213) no-repeat 0 -98px;
+    background: url(frame-sbb949863bf.png) no-repeat 0 -98px;
     -webkit-background-size: 304px 115px;
     background-size: 304px 115px;
     width: 282px;
