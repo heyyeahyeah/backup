@@ -1155,7 +1155,7 @@ section {
 }
 
 .selectArea.type_02 .selectArea_accordion._opened .selectArea_accordion_title {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fdetail%2Fdetail_accordion_list_gray.png%3F1526968059);
+    background-image: url(detail_accordion_list_gray.png);
     color: #fffb84
 }
 
@@ -1201,7 +1201,7 @@ section {
 }
 
 .selectArea.type_02 .selectArea_accordion:nth-last-of-type(1)._opened .selectArea_accordion_title {
-    background-image: url(http://sp.pf-img-a.mbga.jp/12008305/?url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Fcommon%2Fdetail%2Fdetail_accordion_list_gray.png%3F1526968059)
+    background-image: url(detail_accordion_list_gray.png)
 }
 
 .detailArea.type_02 {
