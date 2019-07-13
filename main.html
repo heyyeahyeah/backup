@@ -7,7 +7,7 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="-1">
     <meta name="format-detection" content="telephone=no">
-    <title>アイドルマスター シンデレラガールズ</title>
+    <title>아이돌마스터 신데렐라 걸즈</title>
     <link rel="stylesheet" type="text/css" href="new_mypage_common.css" media="all">
     <script type="text/javascript">
         if (window.localStorage) {
@@ -554,10 +554,10 @@ kg
 <% } %>
 <div class="area-btn-common _base-width">
 <% if(!trade_prohibition.is_trade_limit) { %>
-<a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">フリートレード検索</a>
+<a href='<%- url_trade.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(!is_exist_archive) { %>m-Cnt<% } %>" style="font-size:12px">프리 트레이드 검색</a>
 <% } %>
 <% if(is_exist_archive) { %>
-<a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">アルバム</a>
+<a href='<%- url_album.replace("__hash_card_id__", data.hash_card_id) %>' class="btn_normal_line_2 <% if(trade_prohibition.is_trade_limit) { %>m-Cnt<% } %>">앨범</a>
 <% } %>
 </div>
 <% if (event) { %>
@@ -576,8 +576,8 @@ kg
 <% } %>
 </div>
 <div class="area-btn-common _base-width m-Btm8">
-<a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">イベントメモリー<br>を見る</a>
-<a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">他のイベント登場<br>アイドルを検索する</a>
+<a href='<%- url_event_memory.replace("__event_id__", event[key].event_id).replace("__category_id__", event[key].category_id) %>' class="btn_normal_line_2 _line_2">이벤트 메모리<br>보기</a>
+<a href='<%- url_other_event.replace("__category_id__", event[key].category_id).replace("__event_id__", event[key].event_id) %>' class="btn_normal_line_2 _line_2">이벤트에 등장한<br>다른 아이돌 검색</a>
 </div>
 <% }); %>
 <% } %>
@@ -732,7 +732,7 @@ kg
                     },
                     "comments": {
                         "comment": "처음 뵙겠습니다, 프로듀서씨. 모든 팬들께서 상냥한 기분이 될 수 있도록, 미소를 짓게 만드는 아이돌을 목표로 하고 싶습니다. 잘 부탁 드립니다.",
-                        "comments_my_1": "멋진 날이 되었으면 좋겠네요",
+                        "comments_my_1": "좋은 날이 되었으면 좋겠네요",
                         "comments_my_2": "항상 수고하십니다",
                         "comments_my_3": "나, 제대로 하고 있는 걸까...?",
                         "comments_my_4": "(이름)프로듀서, 좋은 아침입니다",
@@ -808,20 +808,20 @@ kg
                         "card_cv": "카네코 유키"
                     },
                     "comments": {
-                        "comment": "\uff8c\uff67\uff9d\u306e\u307f\u306a\u3055\u3093\u306e\u7b11\u9854\uff64\u4e00\u4eba\u4e00\u4eba\u3061\u3083\u3093\u3068\u899a\u3048\u308b\u3088\u3046\u306b\u3057\u3066\u308b\u3093\u3067\u3059\uff61\u3064\u3089\u304f\u3066\u3082\u305d\u308c\u3092\u601d\u3044\u51fa\u305b\u3070\uff64\u3044\u3064\u3067\u3082\u5e78\u305b\u306a\u6c17\u6301\u3061\u306b\u306a\u308c\u307e\u3059\u304b\u3089\u306d\u3063\uff61\u5e78\u305b\u306a\u6c17\u6301\u3061\uff64\u5927\u4e8b\u3067\u3059\u3063\uff61",
-                        "comments_my_1": "\u3044\u3044\u65e5\u306b\u306a\u308b\u3068\u3044\u3044\u3067\u3059\u306d",
-                        "comments_my_2": "\u3044\u3064\u3082\u304a\u75b2\u308c\u69d8\u3067\u3059",
-                        "comments_my_3": "\u304a\u6563\u6b69\u3057\u307e\u305b\u3093\u304b? ",
-                        "comments_my_4": "\u3044\u3044\u5929\u6c17\u3060\u3068\u7720\u304f\u306a\u3063\u3061\u3083\u3044\u307e\u3059\u306d\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70",
-                        "comments_my_max": "\u3059\uff70\u2026\u3059\uff70\u2026\u2026\u3042\u306e\u306d\uff64\u308f\u305f\u3057\u2026\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306e\u3053\u3068\u2026\u2026",
-                        "comments_work_1": "\u7cbe\u4e00\u676f\u9811\u5f35\u308a\u307e\u3059\u3063",
-                        "comments_work_2": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3057\u305f\u3063",
-                        "comments_work_3": "\u307f\u306a\u3055\u3093\u3092\u7b11\u9854\u306b\u3057\u3066\u304d\u307e\u3059\u3063",
-                        "comments_work_4": "\uff8c\uff67\uff9d\u306e\u307f\u306a\u3055\u3093\u3068\u4e07\u7269\u306e\u7d42\u7d50\u8005\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\u306e\u305f\u3081\u306b\uff64\u79c1\u9811\u5f35\u308b\u3063",
-                        "comments_work_max": "\u3042\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u304c\u7b11\u3063\u3066\u308b\uff61\u79c1\uff64\u4e0a\u624b\u304f\u3067\u304d\u305f\u306e\u304b\u306a? ",
-                        "comments_work_love_up": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3082\u4eca\uff64\u5e78\u305b\u306a\u6c17\u6301\u3061\u3060\u3068\u3044\u3044\u306a\u2026",
-                        "comments_live": "\u3088\u308d\u3057\u304f\u304a\u9858\u3044\u3057\u307e\u3059\u3063",
-                        "comments_love_max": "\u3053\u3093\u306a\u3053\u3068\u8a00\u3063\u3061\u3083\uff71\uff72\uff84\uff9e\uff99\u5931\u683c\u304b\u3082\u3057\u308c\u307e\u305b\u3093\u3051\u3069\u2026\u79c1\uff64\u8ab0\u3088\u308a\u3082\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306e\u7b11\u9854\u3092\u898b\u308b\u306e\u304c\uff64\u3059\uff64\u597d\u304d\u306a\u3093\u3067\u3059\u3088"
+                        "comment": "모든 팬들의 미소, 한 사람 한 사람 제대로 기억할 수 있도록 하고 있어요. 힘든 때라도 그걸 떠올리면, 언제라도 행복한 기분이 될 수 있으니까요. 행복한 기분, 중요하답니다.",
+                        "comments_my_1": "좋은 날이 되었으면 좋겠네요",
+                        "comments_my_2": "항상 수고하십니다",
+                        "comments_my_3": "산책하지 않으실래요?",
+                        "comments_my_4": "날이 좋으니 졸립네요, (이름)프로듀서",
+                        "comments_my_max": "스-...스-...... 저기, 나... (이름)씨를......",
+                        "comments_work_1": "열심히 하겠습니다",
+                        "comments_work_2": "감사합니다",
+                        "comments_work_3": "모두를 미소짓게 만들겠어요",
+                        "comments_work_4": "모든 팬들과 (이름)프로듀서를 위해, 열심히 할 거야",
+                        "comments_work_max": "아, (이름)씨가 웃으셨어. 나, 잘한 걸까?",
+                        "comments_work_love_up": "(이름)씨도 지금, 행복한 기분이었으면 좋겠네...",
+                        "comments_live": "잘 부탁드립니다",
+                        "comments_love_max": "이런 말 하면 아이돌 실격일지도 모르지만... 저, 누구보다도 (이름)씨의 미소를, 좋.. 좋아한다구요"
                     },
                     "voice": {
                         "comment": "12ff301ee4f02f3fa511f58c9e94418f.mp4",
@@ -853,7 +853,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d]타카모리 아이코",
+                        "card_name": "[발렌타인]타카모리 아이코",
                         "rarity": "1",
                         "cost": "10",
                         "attribute": "passion",
@@ -863,12 +863,12 @@ kg
                         "default_attack": "840",
                         "default_defense": "1360",
                         "hash_card_id": "8406433757bac86ef8134cd59ed4cd3b",
-                        "alias_name": "\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d",
+                        "alias_name": "발렌타인",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3002101",
-                        "card_name": "[\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3]타카모리 아이코",
+                        "card_name": "[발렌타인]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -885,20 +885,20 @@ kg
                         "card_cv": "카네코 유키"
                     },
                     "comments": {
-                        "comment": "\u5927\u5207\u306a\uff72\uff8d\uff9e\uff9d\uff84\u306e\u8a18\u5ff5\u65e5\u3092\u5199\u771f\u306b\u304a\u3055\u3081\u3088\u3046\u304b\u3068\u601d\u3063\u3066\uff64\uff76\uff92\uff97\u3092\u6301\u3063\u3066\u304d\u305f\u3093\u3067\u3059\u3088\uff61\u307f\u3093\u306a\u3067\u697d\u3057\u304f\u904e\u3054\u305b\u308c\u3070\u3044\u3044\u306a\u3063\u3066\u601d\u3063\u3066\u2026\u3060\u304b\u3089\u307b\u3089\uff64\uff8c\uff9f\uff9b\uff83\uff9e\uff6d\uff70\uff7b\uff70\u3055\u3093\u3082\u4e00\u7dd2\u306b\u7b11\u3063\u3066\u304f\u3060\u3055\u3044",
-                        "comments_my_1": "\u4eca\u65e5\u3082\u9811\u5f35\u308a\u307e\u3057\u3087\u3046\u306d",
-                        "comments_my_2": "\u8a18\u5ff5\u65e5\u3063\u3066\u5fc3\u304c\u5f3e\u307f\u307e\u3059\u306d",
-                        "comments_my_3": "\u3082\u3057\u304b\u3057\u3066\uff64\u3082\u3046\u8cb0\u3063\u3066\u2026?",
-                        "comments_my_4": "\uff81\uff6e\uff7a\u3067\u307f\u306a\u3055\u3093\uff64\u512a\u3057\u3044\u6c17\u6301\u3061\u306b\u306a\u3063\u3066\u3082\u3089\u3044\u305f\u3044\u3067\u3059\u306d",
-                        "comments_my_max": "\u79c1\u304c\u7b11\u9854\u3067\u3044\u3089\u308c\u308b\u306e\u306f\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306e\u2026\u304a\u304b\u3052\u3067\u3059\u2026",
-                        "comments_work_1": "\uff8c\uff67\uff9d\u306e\u65b9\uff64\u898b\u3064\u304b\u308a\u307e\u3057\u305f?",
-                        "comments_work_2": "\u65e5\u5dee\u3057\u304c\u304d\u308c\u3044\u3067\u3059\u306d",
-                        "comments_work_3": "\u624b\u6e21\u3057\u3063\u3066\uff64\u5fc3\u304c\uff8e\uff6f\uff7a\uff98\u3057\u307e\u3059\u306d",
-                        "comments_work_4": "\uff8c\uff67\uff9d\u3068\u3075\u308c\u5408\u3048\u308b\u304a\u4ed5\u4e8b\u3063\u3066\uff7d\uff83\uff77\u3067\u3059\u306d\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093",
-                        "comments_work_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093! \u307f\u306a\u3055\u3093\u304c\u7b11\u9854\u306b\u306a\u3063\u3066\u304f\u308c\u307e\u3059\u3088!",
-                        "comments_work_love_up": "\u3084\u3063\u3071\u308a\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306e\u7b11\u9854\u304c1\u756a\u5143\u6c17\u3092\u3082\u3089\u3048\u307e\u3059\u306d!",
-                        "comments_live": "\u3048\u3063\u3068\u2026\u304a\u9858\u3044\u3057\u307e\u3059\u306d",
-                        "comments_love_max": "\u306f\u3044\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306b\u3082\u3082\u3061\u308d\u3093\u7528\u610f\u3057\u3066\u307e\u3059\uff61\u305d\u306e\u524d\u306b\u2026\u2026\u305d\u306e\u7b11\u9854\uff64\u5199\u771f\u306b\u64ae\u3089\u305b\u3066\u304f\u3060\u3055\u3044\uff61\u306d\u3063\uff64\u7b11\u3063\u3066?"
+                        "comment": "기념일의 소중한 이벤트를 사진에 간직하고자, 카메라를 가져왔거든요. 전 모두가 즐거운 시간을 보냈으면 좋겠다고 생각하니... 그러니까 자, 프로듀서씨도 함께 웃어주세요",
+                        "comments_my_1": "오늘도 열심히 합시다",
+                        "comments_my_2": "기념일이라니 마음이 설레네요",
+                        "comments_my_3": "혹시, 벌써 받으셨나...?",
+                        "comments_my_4": "초코로 모두들, 상냥한 기분이 되어 주셨으면 합니다",
+                        "comments_my_max": "제가 웃을 수 있는 건, (이름)씨의... 덕분이에요...",
+                        "comments_work_1": "팬의 방향, 찾으셨나요?",
+                        "comments_work_2": "햇살이 아름답네요",
+                        "comments_work_3": "손수 전해드리니, 마음이 따뜻해져요",
+                        "comments_work_4": "팬들과 함께할 수 있다는 건 멋진 일이네요, (이름)씨",
+                        "comments_work_max": "(이름)씨! 모두가 미소 지어줄 거에요!",
+                        "comments_work_love_up": "역시 (이름)씨의 미소가 가장 기운을 북돋아 주네요!",
+                        "comments_live": "저기... 잘 부탁 드립니다",
+                        "comments_love_max": "네, 물론 (이름)씨의 것도 준비해 두었어요. 그 전에...... 그 미소, 찍게 해주세요. 자, 웃어요?"
                     },
                     "voice": {
                         "comment": "93f124375ef2528c49687337e13518d4.mp4",
@@ -930,7 +930,7 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d]타카모리 아이코+",
+                        "card_name": "[발렌타인]타카모리 아이코+",
                         "rarity": "2",
                         "cost": "10",
                         "attribute": "passion",
@@ -940,12 +940,12 @@ kg
                         "default_attack": "1008",
                         "default_defense": "1632",
                         "hash_card_id": "55f34023e9d773f97afde9bb99574843",
-                        "alias_name": "\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d",
+                        "alias_name": "발렌타인",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3102102",
-                        "card_name": "[\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3]타카모리 아이코+",
+                        "card_name": "[발렌타인]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -962,20 +962,20 @@ kg
                         "card_cv": "카네코 유키"
                     },
                     "comments": {
-                        "comment": "\uff8a\uff6f\uff8b\uff9f\uff70\uff8a\uff9e\uff9a\uff9d\uff80\uff72\uff9d!! \u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\u307f\u306a\u3055\u3093\u306b\uff81\uff6e\uff7a\uff9a\uff70\uff84\u3092\u5c4a\u3051\u307e\u3059\u306d! \u79c1\u306e\uff81\uff6e\uff7a\uff9a\uff70\uff84\u3067\u307f\u3093\u306a\u3092\u5e78\u305b\u306b\u3057\u305f\u3044\u3093\u3067\u3059\uff61\u2026\u79c1\u306e\u308f\u304c\u307e\u307e\u3067\u3059\u3051\u3069\u2026\u805e\u3044\u3066\u3044\u305f\u3060\u3051\u307e\u3059\u304b?",
-                        "comments_my_1": "\u4eca\u65e5\u3082\u9811\u5f35\u308a\u307e\u3057\u3087\u3046",
-                        "comments_my_2": "\u8a18\u5ff5\u65e5\u3063\u3066\u5fc3\u304c\u5f3e\u307f\u307e\u3059\u306d",
-                        "comments_my_3": "\u307f\u3093\u306a\u304c\u559c\u3076\u4e8b\u3092\u8003\u3048\u308b\u306e!",
-                        "comments_my_4": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u306b\u3082\u3082\u3061\u308d\u3093\u2026\u3044\u3084\u3044\u3084\u306a\u3093\u3067\u3082\u7121\u3044\u3067\u3059",
-                        "comments_my_max": "\u304a\u4ed5\u4e8b\u304c\u3042\u308b\u307b\u3069\uff64\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3068\u306e\u6642\u9593\u304c\u5897\u3048\u307e\u3059\u306d\u2026",
-                        "comments_work_1": "\uff8c\uff67\uff9d\u306e\u65b9\uff64\u898b\u3064\u304b\u308a\u307e\u3057\u305f?",
-                        "comments_work_2": "\u65e5\u5dee\u3057\u304c\u304d\u308c\u3044\u3067\u3059\u306d",
-                        "comments_work_3": "\u3042\uff65\u3089\uff65\u3082\uff70\u3069\u3063!",
-                        "comments_work_4": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\uff64\uff8c\uff67\uff9d\u3068\u306e\u6642\u9593\u3092\u5927\u4e8b\u306b\u51fa\u6765\u308b\u3063\u3066\uff72\uff72\u3067\u3059\u306d",
-                        "comments_work_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3082\u4e00\u7dd2\u306b\u7b11\u3063\u3066\uff64\u697d\u3057\u3093\u3067\u304f\u3060\u3055\u3044\u3063",
-                        "comments_work_love_up": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u3068\u306a\u3089\uff64\u305a\u3063\u3068\u304a\u4ed5\u4e8b\u3057\u3066\u3044\u305f\u3044\u3067\u3059\u3063",
-                        "comments_live": "\u304a\u624b\u67d4\u3089\u304b\u306b\u3063",
-                        "comments_love_max": "\u4e07\u7269\u306e\u7d42\u7d50\u8005\u3055\u3093\u79c1\u306e\u308f\u304c\u307e\u307e\u3092\u805e\u3044\u3066\u304f\u308c\u305f\u304a\u793c\u3068\u2026\u79c1\u306e\u2026\u305d\u306e\u2026\u306a\u3093\u3067\u3082\u306a\u3044\u3067\u3059! \u3044\u3044\u304b\u3089\uff64\u6c17\u306b\u3057\u306a\u3044\u3067\u4e0b\u3055\u3044\u3063!"
+                        "comment": "해피 발렌타인!! (이름)씨, 모두에게 초콜릿을 전해드릴게요! 제 초콜릿으로 모두를 행복하게 해주고 싶어요... 제 고집이지만... 들어주시겠어요?",
+                        "comments_my_1": "오늘도 열심히 합시다",
+                        "comments_my_2": "기념일이라니 마음이 설레네요",
+                        "comments_my_3": "모두가 기뻐하는 걸 생각하는 거야!",
+                        "comments_my_4": "(이름)씨에게도 물론... 아니아니 아무것도 아니에요",
+                        "comments_my_max": "일이 많아질 수록, (이름)씨와 함께 있는 시간이 늘어나네요...",
+                        "comments_work_1": "팬의 방향, 찾으셨나요?",
+                        "comments_work_2": "햇살이 아름답네요",
+                        "comments_work_3": "아.라.모.드!",
+                        "comments_work_4": "(이름)씨, 팬들과 소중한 시간을 보낼 수 있어 좋아요",
+                        "comments_work_max": "(이름)씨도 함게 웃으며, 즐겨주세요",
+                        "comments_work_love_up": "(이름)씨와 함께라면, 계속 일하고 싶어요",
+                        "comments_live": "살살 부탁드립니다",
+                        "comments_love_max": "(이름)씨, 제 고집을 들어주신 답례로... 저의... 그... 아무것도 아니에요! 괜찮으니까, 신경쓰지 말아주세요!"
                     },
                     "voice": {
                         "comment": "b9775beae0e5060e181f1fad1f263bfa.mp4",
@@ -997,7 +997,7 @@ kg
                         "103": {
                             "event_id": 103,
                             "category_id": "10060",
-                            "event_name": "\u30d0\u30ec\u30f3\u30bf\u30a4\u30f3\u30d1\u30fc\u30c6\u30a3\u30fc"
+                            "event_name": "발렌타인 파티"
                         }
                     },
                     "release": "",
@@ -1013,22 +1013,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99]타카모리 아이코",
+                        "card_name": "[사뿐한 걸]타카모리 아이코",
                         "rarity": "3",
                         "cost": "12",
                         "attribute": "passion",
-                        "skill_name": "\uff8e\uff9f\uff7c\uff9e\uff83\uff68\uff8c\uff9e\uff7c\uff9d\uff77\uff9d\uff78\uff9e",
-                        "skill_effect": "\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u653b \u4e2d\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "포지티브 띵킹",
+                        "skill_effect": "패단중",
                         "grow_idol_flag": "",
                         "default_attack": "2080",
                         "default_defense": "1920",
                         "hash_card_id": "f70f143d7bb856a67cb7bbd175dc7829",
-                        "alias_name": "\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99",
+                        "alias_name": "사뿐한 걸",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3204601",
-                        "card_name": "[\u3075\u3093\u308f\u308a\u30ac\u30fc\u30eb]타카모리 아이코",
+                        "card_name": "[사뿐한 걸]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1090,22 +1090,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99]타카모리 아이코+",
+                        "card_name": "[사뿐한 걸]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "12",
                         "attribute": "passion",
-                        "skill_name": "\uff8e\uff9f\uff7c\uff9e\uff83\uff68\uff8c\uff9e\uff7c\uff9d\uff77\uff9d\uff78\uff9e",
-                        "skill_effect": "\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u653b \u4e2d\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "포지티브 띵킹",
+                        "skill_effect": "패단중",
                         "grow_idol_flag": "",
                         "default_attack": "2496",
                         "default_defense": "2304",
                         "hash_card_id": "d6dbb1e8e2c5e452026e993c5a8fde56",
-                        "alias_name": "\u3075\u3093\u308f\u308a\uff76\uff9e\uff70\uff99",
+                        "alias_name": "사뿐한 걸",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3304602",
-                        "card_name": "[\u3075\u3093\u308f\u308a\u30ac\u30fc\u30eb]타카모리 아이코+",
+                        "card_name": "[사뿐한 걸]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1173,22 +1173,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70]타카모리 아이코",
+                        "card_name": "[애니버서리 옐로]타카모리 아이코",
                         "rarity": "3",
                         "cost": "10",
                         "attribute": "passion",
-                        "skill_name": "\u60f3\u3044\u51fa\uff7d\uff8f\uff72\uff99",
-                        "skill_effect": "\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u5b88 \u5c0f\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "추억 스마일",
+                        "skill_effect": "패수소",
                         "grow_idol_flag": "",
                         "default_attack": "1260",
                         "default_defense": "1800",
                         "hash_card_id": "a14b13704b20edf9834c27832fd1670f",
-                        "alias_name": "\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70",
+                        "alias_name": "애니버서리 옐로",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3207601",
-                        "card_name": "[\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u30a4\u30a8\u30ed\u30fc]타카모리 아이코",
+                        "card_name": "[애니버서리 옐로]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1240,7 +1240,7 @@ kg
                         "403": {
                             "event_id": 403,
                             "category_id": "10020",
-                            "event_name": "\u30a2\u30a4\u30c9\u30eb\u30d7\u30ed\u30c7\u30e5\u30fc\u30b9 the 1st Anniversary"
+                            "event_name": "아이돌 프로듀스 the 1st Anniversary"
                         }
                     },
                     "release": "",
@@ -1256,22 +1256,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70]타카모리 아이코+",
+                        "card_name": "[애니버서리 옐로]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "10",
                         "attribute": "passion",
-                        "skill_name": "\u60f3\u3044\u51fa\uff7d\uff8f\uff72\uff99",
-                        "skill_effect": "\uff78\uff70\uff99\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u5b88 \u4e2d\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "추억 스마일",
+                        "skill_effect": "쿨패수중",
                         "grow_idol_flag": "",
                         "default_attack": "1512",
                         "default_defense": "2160",
                         "hash_card_id": "d0289c681ff7668957a4d7a4198b61aa",
-                        "alias_name": "\uff71\uff86\uff8a\uff9e\uff70\uff7b\uff98\uff70\uff72\uff74\uff9b\uff70",
+                        "alias_name": "애니버서리 옐로",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3307602",
-                        "card_name": "[\u30a2\u30cb\u30d0\u30fc\u30b5\u30ea\u30fc\u30a4\u30a8\u30ed\u30fc]타카모리 아이코+",
+                        "card_name": "[애니버서리 옐로]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1333,22 +1333,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u65b0\u6625\uff76\uff9e\uff70\uff99]타카모리 아이코",
+                        "card_name": "[신춘 걸]타카모리 아이코",
                         "rarity": "3",
                         "cost": "14",
                         "attribute": "passion",
-                        "skill_name": "\u3086\u308b\u3075\u308f\uff71\uff9a\uff9d\uff7c\uff9e",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d2\u4eba\u306e\u653b\u5b88 \u7279\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "느긋나긋 어레인지",
+                        "skill_effect": "전양특대",
                         "grow_idol_flag": "",
                         "default_attack": "2800",
                         "default_defense": "2640",
                         "hash_card_id": "ca354dc7b9ffa3261b69dfbcb633c162",
-                        "alias_name": "\u65b0\u6625\uff76\uff9e\uff70\uff99",
+                        "alias_name": "신춘 걸",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3227201",
-                        "card_name": "[\u65b0\u6625\u30ac\u30fc\u30eb]타카모리 아이코",
+                        "card_name": "[신춘 걸]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1410,22 +1410,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u65b0\u6625\uff76\uff9e\uff70\uff99]타카모리 아이코+",
+                        "card_name": "[신춘 걸]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "14",
                         "attribute": "passion",
-                        "skill_name": "\u3086\u308b\u3075\u308f\uff71\uff9a\uff9d\uff7c\uff9e",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d2\u4eba\u306e\u653b\u5b88 \u7279\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "느긋나긋 어레인지",
+                        "skill_effect": "전양특대",
                         "grow_idol_flag": "",
                         "default_attack": "3360",
                         "default_defense": "3168",
                         "hash_card_id": "d3fa350883bd59a8245cef6a04319057",
-                        "alias_name": "\u65b0\u6625\uff76\uff9e\uff70\uff99",
+                        "alias_name": "신춘 걸",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3327202",
-                        "card_name": "[\u65b0\u6625\u30ac\u30fc\u30eb]타카모리 아이코+",
+                        "card_name": "[신춘 걸]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1487,22 +1487,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70]타카모리 아이코",
+                        "card_name": "[따끈따끈 에콜로지]타카모리 아이코",
                         "rarity": "3",
                         "cost": "14",
                         "attribute": "passion",
-                        "skill_name": "\u304a\u3072\u3055\u307e\u306e\u9999\u308a",
-                        "skill_effect": "\uff78\uff70\uff99\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d2\u4eba\u306e\u653b\u5b88 \u7279\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "햇님의 향기",
+                        "skill_effect": "쿨패양특대",
                         "grow_idol_flag": "",
                         "default_attack": "2760",
                         "default_defense": "2740",
                         "hash_card_id": "c827dabc28f2d3301d22ec465998046f",
-                        "alias_name": "\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70",
+                        "alias_name": "따끈따끈 에콜로지",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3242201",
-                        "card_name": "[\u307d\u304b\u307d\u304b\u30a8\u30b3\u30ed\u30b8\u30fc]타카모리 아이코",
+                        "card_name": "[따끈따끈 에콜로지]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1564,22 +1564,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70]타카모리 아이코+",
+                        "card_name": "[따끈따끈 에콜로지]타카모리 아이코+",
                         "rarity": "4",
                         "cost": "14",
                         "attribute": "passion",
-                        "skill_name": "\u304a\u3072\u3055\u307e\u306e\u9999\u308a",
-                        "skill_effect": "\uff78\uff70\uff99\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d2\uff5e3\u4eba\u306e\u653b\u5b88 \u7279\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "햇님의 향기",
+                        "skill_effect": "쿨패양특대",
                         "grow_idol_flag": "",
                         "default_attack": "3312",
                         "default_defense": "3288",
                         "hash_card_id": "716d5b068391df79655b56bfa34a3ed5",
-                        "alias_name": "\u307d\u304b\u307d\u304b\uff74\uff7a\uff9b\uff7c\uff9e\uff70",
+                        "alias_name": "따끈따끈 에콜로지",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3342202",
-                        "card_name": "[\u307d\u304b\u307d\u304b\u30a8\u30b3\u30ed\u30b8\u30fc]타카모리 아이코+",
+                        "card_name": "[따끈따끈 에콜로지]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1641,22 +1641,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코",
+                        "card_name": "[느긋나긋 소녀]타카모리 아이코",
                         "rarity": "5",
                         "cost": "17",
                         "attribute": "passion",
-                        "skill_name": "\uff85\uff81\uff6d\uff97\uff99\uff7d\uff8f\uff72\uff99",
-                        "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u653b \uff97\uff9d\uff80\uff9e\uff91\u3067\u5927\uff5e\u7279\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "네츄럴 스마일",
+                        "skill_effect": "큣패단반특대",
                         "grow_idol_flag": "",
                         "default_attack": "4340",
                         "default_defense": "3160",
                         "hash_card_id": "6efffe43696b87d64380769c40a3f12d",
-                        "alias_name": "\u3086\u308b\u3075\u308f\u4e59\u5973",
+                        "alias_name": "느긋나긋 소녀",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3405201",
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코",
+                        "card_name": "[느긋나긋 소녀]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1720,22 +1720,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코+",
+                        "card_name": "[느긋나긋 소녀]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "17",
                         "attribute": "passion",
-                        "skill_name": "\uff85\uff81\uff6d\uff97\uff99\uff7d\uff8f\uff72\uff99",
-                        "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u653b \uff97\uff9d\uff80\uff9e\uff91\u3067\u7279\u5927\uff5e\u6975\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "네츄럴 스마일",
+                        "skill_effect": "큣패단반극",
                         "grow_idol_flag": "",
                         "default_attack": "5208",
                         "default_defense": "3792",
                         "hash_card_id": "0321c8e5bf54a3c4602ee87bac727750",
-                        "alias_name": "\u3086\u308b\u3075\u308f\u4e59\u5973",
+                        "alias_name": "느긋나긋 소녀",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3505202",
-                        "card_name": "[\u3086\u308b\u3075\u308f\u4e59\u5973]타카모리 아이코+",
+                        "card_name": "[느긋나긋 소녀]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1797,22 +1797,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코",
+                        "card_name": "[심록의 마녀]타카모리 아이코",
                         "rarity": "5",
                         "cost": "18",
                         "attribute": "passion",
-                        "skill_name": "\u3084\u3055\u3057\u3044\u9b54\u6cd5",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d1\u4eba\u306e\u653b\u5b88 \u7279\u5927\uff80\uff9e\uff73\uff9d",
+                        "skill_name": "상냥한 마법",
+                        "skill_effect": "전양특대다운",
                         "grow_idol_flag": "",
                         "default_attack": "4440",
                         "default_defense": "4180",
                         "hash_card_id": "b9c843a22dc3445a53c384de9948be97",
-                        "alias_name": "\u6df1\u7dd1\u306e\u9b54\u5973",
+                        "alias_name": "심록의 마녀",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3409001",
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코",
+                        "card_name": "[심록의 마녀]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1876,22 +1876,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코+",
+                        "card_name": "[심록의 마녀]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "18",
                         "attribute": "passion",
-                        "skill_name": "\u3084\u3055\u3057\u3044\u9b54\u6cd5",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d1\u4eba\u306e\u653b\u5b88 \u6975\u5927\uff80\uff9e\uff73\uff9d",
+                        "skill_name": "상냥한 마법",
+                        "skill_effect": "전양극대다운",
                         "grow_idol_flag": "",
                         "default_attack": "5328",
                         "default_defense": "5016",
                         "hash_card_id": "dab9960d2db1424d77af7ba448c77039",
-                        "alias_name": "\u6df1\u7dd1\u306e\u9b54\u5973",
+                        "alias_name": "심록의 마녀",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3509002",
-                        "card_name": "[\u6df1\u7dd1\u306e\u9b54\u5973]타카모리 아이코+",
+                        "card_name": "[심록의 마녀]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -1955,22 +1955,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70]타카모리 아이코",
+                        "card_name": "[CD데뷔]타카모리 아이코",
                         "rarity": "5",
                         "cost": "11",
                         "attribute": "passion",
-                        "skill_name": "\u304a\u6563\u6b69\uff76\uff92\uff97",
-                        "skill_effect": "\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u653b\u5b88 \u4e2d\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "산책 카메라",
+                        "skill_effect": "패양중",
                         "grow_idol_flag": "",
                         "default_attack": "2240",
                         "default_defense": "2080",
                         "hash_card_id": "696e63ecba110164d3740efd5dab872a",
-                        "alias_name": "CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70",
+                        "alias_name": "CD데뷔",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3409701",
-                        "card_name": "[CD\u30c7\u30d3\u30e5\u30fc]타카모리 아이코",
+                        "card_name": "[CD데뷔]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2034,22 +2034,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70]타카모리 아이코+",
+                        "card_name": "[CD데뷔]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "11",
                         "attribute": "passion",
-                        "skill_name": "\u304a\u6563\u6b69\uff76\uff92\uff97",
-                        "skill_effect": "\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\uff80\uff72\uff8c\uff9f\u306e\u653b\u5b88 \u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "산책 카메라",
+                        "skill_effect": "패양대",
                         "grow_idol_flag": "",
                         "default_attack": "2688",
                         "default_defense": "2496",
                         "hash_card_id": "e3d9a2ea1b5c8caec4250f08f4f5cc95",
-                        "alias_name": "CD\uff83\uff9e\uff8b\uff9e\uff6d\uff70",
+                        "alias_name": "CD데뷔",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3509702",
-                        "card_name": "[CD\u30c7\u30d3\u30e5\u30fc]타카모리 아이코+",
+                        "card_name": "[CD데뷔]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2113,22 +2113,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91]타카모리 아이코",
+                        "card_name": "[신데렐라 드림]타카모리 아이코",
                         "rarity": "5",
                         "cost": "19",
                         "attribute": "passion",
-                        "skill_name": "\u5922\u306e\uff81\uff76\uff97",
-                        "skill_effect": "\u81ea\u5206\u306e\u653b \u6975\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "꿈의 힘",
+                        "skill_effect": "자단극대",
                         "grow_idol_flag": "",
                         "default_attack": "5520",
                         "default_defense": "3520",
                         "hash_card_id": "a6a1581237e6048bae08c63a85e50e87",
-                        "alias_name": "\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91",
+                        "alias_name": "신데렐라 드림",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3411301",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코",
+                        "card_name": "[신데렐라 드림]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2180,7 +2180,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3411301",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코",
+                        "card_name": "[신데렐라 드림]타카모리 아이코",
                         "from": "2014\/01\/30\/15:00",
                         "to": "2014\/07\/31\/12:00",
                         "limitless_flag": "0",
@@ -2195,22 +2195,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91]타카모리 아이코+",
+                        "card_name": "[신데렐라 드림]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "19",
                         "attribute": "passion",
-                        "skill_name": "\u5922\u306e\uff81\uff76\uff97",
-                        "skill_effect": "\u81ea\u5206\u306e\u653b \u7d76\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "꿈의 힘",
+                        "skill_effect": "자단절",
                         "grow_idol_flag": "",
                         "default_attack": "6624",
                         "default_defense": "4224",
                         "hash_card_id": "77828bac52f87e72db028e70a0338c11",
-                        "alias_name": "\uff7c\uff9d\uff83\uff9e\uff9a\uff97\uff84\uff9e\uff98\uff70\uff91",
+                        "alias_name": "신데렐라 드림",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3511302",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코+",
+                        "card_name": "[신데렐라 드림]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2262,7 +2262,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3511302",
-                        "card_name": "[\u30b7\u30f3\u30c7\u30ec\u30e9\u30c9\u30ea\u30fc\u30e0]타카모리 아이코+",
+                        "card_name": "[신데렐라 드림]타카모리 아이코+",
                         "from": "2014\/01\/30\/15:00",
                         "to": "2014\/07\/31\/12:00",
                         "limitless_flag": "0",
@@ -2277,22 +2277,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코",
+                        "card_name": "[산책하기 좋은 날]타카모리 아이코",
                         "rarity": "5",
                         "cost": "16",
                         "attribute": "passion",
-                        "skill_name": "\u601d\u3044\u51fa\u306e\u4e00\u679a",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\u653b\u5b88 \uff97\uff9d\uff80\uff9e\uff91\u3067\u5927\uff5e\u7279\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "추억의 한 장",
+                        "skill_effect": "전양반특대",
                         "grow_idol_flag": "",
                         "default_attack": "3560",
                         "default_defense": "3540",
                         "hash_card_id": "e82199f18a2886519aa98a1a5ef46043",
-                        "alias_name": "\u304a\u3055\u3093\u307d\u65e5\u548c",
+                        "alias_name": "산책하기 좋은 날",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3413101",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코",
+                        "card_name": "[산책하기 좋은 날]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2344,7 +2344,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3413101",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코",
+                        "card_name": "[산책하기 좋은 날]타카모리 아이코",
                         "from": "2014\/04\/04\/15:00",
                         "to": "2017\/04\/21\/12:00",
                         "limitless_flag": "0",
@@ -2359,22 +2359,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코+",
+                        "card_name": "[산책하기 좋은 날]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "16",
                         "attribute": "passion",
-                        "skill_name": "\u601d\u3044\u51fa\u306e\u4e00\u679a",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\u653b\u5b88 \uff97\uff9d\uff80\uff9e\uff91\u3067\u7279\u5927\uff5e\u7d76\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "추억의 한 장",
+                        "skill_effect": "전양반절",
                         "grow_idol_flag": "",
                         "default_attack": "4272",
                         "default_defense": "4248",
                         "hash_card_id": "1a30af5fa8c952b1424a1dbb60269ff0",
-                        "alias_name": "\u304a\u3055\u3093\u307d\u65e5\u548c",
+                        "alias_name": "산책하기 좋은 날",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3513102",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코+",
+                        "card_name": "[산책하기 좋은 날]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2426,7 +2426,7 @@ kg
                     "release": "",
                     "trade_prohibition": {
                         "card_id": "3513102",
-                        "card_name": "[\u304a\u3055\u3093\u307d\u65e5\u548c]타카모리 아이코+",
+                        "card_name": "[산책하기 좋은 날]타카모리 아이코+",
                         "from": "2014\/04\/04\/15:00",
                         "to": "2017\/04\/21\/12:00",
                         "limitless_flag": "0",
@@ -2443,22 +2443,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84]타카모리 아이코",
+                        "card_name": "[정성 어린 프레젠트]타카모리 아이코",
                         "rarity": "5",
                         "cost": "20",
                         "attribute": "passion",
-                        "skill_name": "\u3066\u306e\u3072\u3089\u306e\u306c\u304f\u3082\u308a",
-                        "skill_effect": "\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d2\u4eba\u306e\u653b \u6975\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "손바닥의 온기",
+                        "skill_effect": "패단극대",
                         "grow_idol_flag": "",
                         "default_attack": "5980",
                         "default_defense": "4260",
                         "hash_card_id": "39c5e502a5ec2c962e1610098b6317cc",
-                        "alias_name": "\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84",
+                        "alias_name": "정성 어린 프레젠트",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3419801",
-                        "card_name": "[\u307e\u3054\u3053\u308d\u30d7\u30ec\u30bc\u30f3\u30c8]타카모리 아이코",
+                        "card_name": "[정성 어린 프레젠트]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2520,22 +2520,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84]타카모리 아이코+",
+                        "card_name": "[정성 어린 프레젠트]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "20",
                         "attribute": "passion",
-                        "skill_name": "\u3066\u306e\u3072\u3089\u306e\u306c\u304f\u3082\u308a",
-                        "skill_effect": "\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d2\u4eba\u306e\u653b \u7d76\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "손바닥의 온기",
+                        "skill_effect": "패단절대",
                         "grow_idol_flag": "",
                         "default_attack": "7176",
                         "default_defense": "5112",
                         "hash_card_id": "0e80e42aa03acf28172a86a6113212e5",
-                        "alias_name": "\u307e\u3054\u3053\u308d\uff8c\uff9f\uff9a\uff7e\uff9e\uff9d\uff84",
+                        "alias_name": "정성 어린 프레젠트",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3519802",
-                        "card_name": "[\u307e\u3054\u3053\u308d\u30d7\u30ec\u30bc\u30f3\u30c8]타카모리 아이코+",
+                        "card_name": "[정성 어린 프레젠트]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2599,22 +2599,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70]타카모리 아이코",
+                        "card_name": "[방과 후 섬머]타카모리 아이코",
                         "rarity": "5",
                         "cost": "21",
                         "attribute": "passion",
-                        "skill_name": "\u9752\u6625\u306e\u601d\u3044\u51fa",
-                        "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d3\uff5e4\u4eba\u306e\u653b\u5b88 \u6975\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "청춘의 추억",
+                        "skill_effect": "큣패양극대",
                         "grow_idol_flag": "",
                         "default_attack": "5520",
                         "default_defense": "5460",
                         "hash_card_id": "775f8939d540b7b1c169ba72be9ca25e",
-                        "alias_name": "\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70",
+                        "alias_name": "방과 후 섬머",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3425901",
-                        "card_name": "[\u653e\u8ab2\u5f8c\u30b5\u30de\u30fc]타카모리 아이코",
+                        "card_name": "[방과 후 섬머]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2676,22 +2676,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70]타카모리 아이코+",
+                        "card_name": "[방과 후 섬머]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "21",
                         "attribute": "passion",
-                        "skill_name": "\u9752\u6625\u306e\u601d\u3044\u51fa",
-                        "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d3\uff5e4\u4eba\u306e\u653b\u5b88 \u7d76\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "청춘의 추억",
+                        "skill_effect": "큣패양절대",
                         "grow_idol_flag": "",
                         "default_attack": "6624",
                         "default_defense": "6552",
                         "hash_card_id": "c2f3cd2bd710cebb14c84f6a64d9949a",
-                        "alias_name": "\u653e\u8ab2\u5f8c\uff7b\uff8f\uff70",
+                        "alias_name": "방과 후 섬머",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3525902",
-                        "card_name": "[\u653e\u8ab2\u5f8c\u30b5\u30de\u30fc]타카모리 아이코+",
+                        "card_name": "[방과 후 섬머]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2753,22 +2753,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84]타카모리 아이코",
+                        "card_name": "[준풍의 밴디트]타카모리 아이코",
                         "rarity": "5",
                         "cost": "22",
                         "attribute": "passion",
-                        "skill_name": "\u5909\u308f\u308c\u308b\u529b",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b\u5b88 \uff97\uff9d\uff80\uff9e\uff91\u3067\u6975\u5927\uff5e\u7d76\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "바뀔 수 있는 힘",
+                        "skill_effect": "전양반절대",
                         "grow_idol_flag": "",
                         "default_attack": "6140",
                         "default_defense": "6100",
                         "hash_card_id": "96372916d89edc657240f71836f7dbb9",
-                        "alias_name": "\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84",
+                        "alias_name": "준풍의 밴디트",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3434701",
-                        "card_name": "[\u99ff\u98a8\u306e\u30d0\u30f3\u30c7\u30c3\u30c8]타카모리 아이코",
+                        "card_name": "[준풍의 밴디트]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2830,22 +2830,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84]타카모리 아이코+",
+                        "card_name": "[준풍의 밴디트]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "22",
                         "attribute": "passion",
-                        "skill_name": "\u5909\u308f\u308c\u308b\u529b",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b\u5b88 \uff97\uff9d\uff80\uff9e\uff91\u3067\u7d76\u5927\uff5e\u8d85\u7d76\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "바뀔 수 있는 힘",
+                        "skill_effect": "전양반초",
                         "grow_idol_flag": "",
                         "default_attack": "7368",
                         "default_defense": "7320",
                         "hash_card_id": "cd741e8ee6028bb578bcbc5d55475390",
-                        "alias_name": "\u99ff\u98a8\u306e\uff8a\uff9e\uff9d\uff83\uff9e\uff6f\uff84",
+                        "alias_name": "준풍의 밴디트",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3534702",
-                        "card_name": "[\u99ff\u98a8\u306e\u30d0\u30f3\u30c7\u30c3\u30c8]타카모리 아이코+",
+                        "card_name": "[준풍의 밴디트]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2907,22 +2907,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코",
+                        "card_name": "[작은 친구]타카모리 아이코",
                         "rarity": "5",
                         "cost": "23",
                         "attribute": "passion",
-                        "skill_name": "\u304a\u6c17\u306b\u5165\u308a\u306e\u5834\u6240",
-                        "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b \u7d76\u5927\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "마음에 드는 장소",
+                        "skill_effect": "큣패단절대",
                         "grow_idol_flag": "",
                         "default_attack": "7320",
                         "default_defense": "5560",
                         "hash_card_id": "55ef16cfd44a6fdfb3709337f27e595f",
-                        "alias_name": "\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061",
+                        "alias_name": "작은 친구",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3439301",
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코",
+                        "card_name": "[작은 친구]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -2986,22 +2986,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코+",
+                        "card_name": "[작은 친구]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "23",
                         "attribute": "passion",
-                        "skill_name": "\u304a\u6c17\u306b\u5165\u308a\u306e\u5834\u6240",
-                        "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b \u8d85\u7d76\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "마음에 드는 장소",
+                        "skill_effect": "큣패단초",
                         "grow_idol_flag": "",
                         "default_attack": "8784",
                         "default_defense": "6672",
                         "hash_card_id": "4d91dd57c123958c50421bb04076c240",
-                        "alias_name": "\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061",
+                        "alias_name": "작은 친구",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3539302",
-                        "card_name": "[\u3061\u3044\u3055\u306a\u3068\u3082\u3060\u3061]타카모리 아이코+",
+                        "card_name": "[작은 친구]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -3065,22 +3065,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코",
+                        "card_name": "[은백의 노랫소리]타카모리 아이코",
                         "rarity": "5",
                         "cost": "24",
                         "attribute": "passion",
-                        "skill_name": "\u3042\u305f\u305f\u304b\u306a\u5834\u6240",
-                        "skill_effect": "\uff78\uff70\uff99\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b \uff97\uff9d\uff80\uff9e\uff91\u3067\u7d76\u5927\uff5e\u8d85\u7d76\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "따뜻한 장소",
+                        "skill_effect": "쿨패단반초",
                         "grow_idol_flag": "",
                         "default_attack": "7560",
                         "default_defense": "5900",
                         "hash_card_id": "91056ece5730b448946fa9f5d1951de3",
-                        "alias_name": "\u767d\u9280\u306e\u6b4c\u58f0",
+                        "alias_name": "은백의 노랫소리",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3444801",
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코",
+                        "card_name": "[은백의 노랫소리]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -3144,22 +3144,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코+",
+                        "card_name": "[은백의 노랫소리]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "24",
                         "attribute": "passion",
-                        "skill_name": "\u3042\u305f\u305f\u304b\u306a\u5834\u6240",
-                        "skill_effect": "\uff78\uff70\uff99\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b \uff97\uff9d\uff80\uff9e\uff91\u3067\u8d85\u7d76\uff5e\u7a76\u6975\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "따뜻한 장소",
+                        "skill_effect": "쿨패단반궁",
                         "grow_idol_flag": "",
                         "default_attack": "9072",
                         "default_defense": "7080",
                         "hash_card_id": "834bc411cf8455fcbd9aded00697fcba",
-                        "alias_name": "\u767d\u9280\u306e\u6b4c\u58f0",
+                        "alias_name": "은백의 노랫소리",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3544802",
-                        "card_name": "[\u767d\u9280\u306e\u6b4c\u58f0]타카모리 아이코+",
+                        "card_name": "[은백의 노랫소리]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -3211,7 +3211,7 @@ kg
                         "1910": {
                             "event_id": 1910,
                             "category_id": "10030",
-                            "event_name": "\u30b9\u30fc\u30d1\u30fc\u30ed\u30dc\u30c3\u30c8\u5927\u6226CG \u594f\u9cf4\u306e\u9280\u6cb3\u3078"
+                            "event_name": "슈퍼로봇대전CG 주명의 은하로"
                         }
                     },
                     "release": "",
@@ -3229,22 +3229,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코",
+                        "card_name": "[온화한 신부]타카모리 아이코",
                         "rarity": "5",
                         "cost": "24",
                         "attribute": "passion",
-                        "skill_name": "\u3057\u3042\u308f\u305b\u306e\u82b1\u9053",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b \uff97\uff9d\uff80\uff9e\uff91\u3067\u7d76\u5927\uff5e\u8d85\u7d76\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "행복의 꽃길",
+                        "skill_effect": "전단반초",
                         "grow_idol_flag": "",
                         "default_attack": "7640",
                         "default_defense": "6020",
                         "hash_card_id": "bba927329abba72d970b384ebb4094fe",
-                        "alias_name": "\u307b\u3093\u308f\u304b\u82b1\u5ac1",
+                        "alias_name": "온화한 신부",
                         "real_name": "타카모리 아이코"
                     },
                     "profile": {
                         "card_id": "3448401",
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코",
+                        "card_name": "[온화한 신부]타카모리 아이코",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -3308,22 +3308,22 @@ kg
                     "is_max_love": true
                 }, {
                     "data": {
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코+",
+                        "card_name": "[온화한 신부]타카모리 아이코+",
                         "rarity": "6",
                         "cost": "24",
                         "attribute": "passion",
-                        "skill_name": "\u3057\u3042\u308f\u305b\u306e\u82b1\u9053",
-                        "skill_effect": "\u5168\uff80\uff72\uff8c\uff9f\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b \uff97\uff9d\uff80\uff9e\uff91\u3067\u8d85\u7d76\uff5e\u7a76\u6975\uff71\uff6f\uff8c\uff9f",
+                        "skill_name": "행복의 꽃길",
+                        "skill_effect": "전단반궁",
                         "grow_idol_flag": "",
                         "default_attack": "9168",
                         "default_defense": "7224",
                         "hash_card_id": "b4bcd4a96f7cf55e96d9cfd6ce694ca9",
-                        "alias_name": "\u307b\u3093\u308f\u304b\u82b1\u5ac1",
+                        "alias_name": "온화한 신부",
                         "real_name": "타카모리 아이코+"
                     },
                     "profile": {
                         "card_id": "3548402",
-                        "card_name": "[\u307b\u3093\u308f\u304b\u82b1\u5ac1]타카모리 아이코+",
+                        "card_name": "[온화한 신부]타카모리 아이코+",
                         "card_kana": "타카모리 아이코",
                         "card_age": "16",
                         "card_from": "도쿄",
@@ -3387,22 +3387,22 @@ kg
                     "is_max_love": true
         }, {
             "data": {
-                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코",
+                "card_name": "[겹치는 추억]타카모리 아이코",
                 "rarity": "5",
                 "cost": "25",
                 "attribute": "passion",
-                "skill_name": "\u7a4d\u307f\u6728\u3042\u305d\u3073",
-                "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b\u5b88 \u8d85\u7d76\uff71\uff6f\uff8c\uff9f",
+                "skill_name": "집짓기 놀이",
+                "skill_effect": "큣패양초",
                 "grow_idol_flag": "",
                 "default_attack": "7420",
                 "default_defense": "7220",
                 "hash_card_id": "8f6d0eb1d230ebf622f0e72ae0f9bb12",
-                "alias_name": "\u304b\u3055\u306a\u308b\u601d\u3044\u51fa",
+                "alias_name": "겹치는 추억",
                 "real_name": "타카모리 아이코"
             },
             "profile": {
                 "card_id": "3454801",
-                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코",
+                "card_name": "[겹치는 추억]타카모리 아이코",
                 "card_kana": "타카모리 아이코",
                 "card_age": "16",
                 "card_from": "도쿄",
@@ -3466,22 +3466,22 @@ kg
             "is_max_love": true
         }, {
             "data": {
-                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코+",
+                "card_name": "[겹치는 추억]타카모리 아이코+",
                 "rarity": "6",
                 "cost": "25",
                 "attribute": "passion",
-                "skill_name": "\u7a4d\u307f\u6728\u3042\u305d\u3073",
-                "skill_effect": "\uff77\uff6d\uff70\uff84\uff65\uff8a\uff9f\uff6f\uff7c\uff6e\uff9d\u306e\uff8c\uff9b\uff9d\uff84\uff92\uff9d\uff8a\uff9e\uff70\u53ca\u3073\uff8a\uff9e\uff6f\uff78\uff92\uff9d\uff8a\uff9e\uff70\u4e0a\u4f4d5\u4eba\u306e\u653b\u5b88 \u7a76\u6975\uff71\uff6f\uff8c\uff9f",
+                "skill_name": "집짓기 놀이",
+                "skill_effect": "큣패양궁",
                 "grow_idol_flag": "",
                 "default_attack": "8904",
                 "default_defense": "8664",
                 "hash_card_id": "497db13df6dbfa90dd87102e6c2134bc",
-                "alias_name": "\u304b\u3055\u306a\u308b\u601d\u3044\u51fa",
+                "alias_name": "겹치는 추억",
                 "real_name": "타카모리 아이코+"
             },
             "profile": {
                 "card_id": "3554802",
-                "card_name": "[\u304b\u3055\u306a\u308b\u601d\u3044\u51fa]타카모리 아이코+",
+                "card_name": "[겹치는 추억]타카모리 아이코+",
                 "card_kana": "타카모리 아이코",
                 "card_age": "16",
                 "card_from": "도쿄",
@@ -3546,7 +3546,7 @@ kg
                 }];
                 idol.idol_story_list = [{
 					"story_id": "352",
-					"story_title": "\u304b\u3055\u306a\u308b\u601d\u3044\u51fa",
+					"story_title": "겹치는 추억",
 					"voice_enable": ["1", "1"],
 					"flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F352%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D260004051", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F352%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D458363204"],
 					"voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F352%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D849592827", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F352%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D845542109"],
@@ -3645,7 +3645,7 @@ kg
                     "movie_name": ["epi_button_moviename_r_early.png", "epi_button_moviename_r_late.png"]
                 }, {
                     "story_id": "99",
-                    "story_title": "\u653e\u8ab2\u5f8c\u30b5\u30de\u30fc",
+                    "story_title": "방과 후 섬머",
                     "voice_enable": ["1", "1"],
                     "flash_path": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F99%2F1%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D594528004", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fmovie_play%2F99%2F2%2Fidol_gallery--idol_detail--__hash_card_id__--2%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D902716736"],
                     "voice_url": ["http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F99%2F1%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D541387909", "http:\/\/sp.pf.mbga.jp\/12008305\/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fidol_story%2Fsound_play%2F99%2F2%2Fidol_gallery%2F__hash_card_id__%3Fl_frm%3DIdol_gallery_idol_detail_1%26rnd%3D848025997"],
@@ -4095,7 +4095,7 @@ kg
         <div class="m-Top8 m-Btm8">
             <img src="line_hoshi.jpg" width="100%">
         </div>
-        <a id="search_cartoon" href='#' class="btn_normal_line_2 m-Cnt m-Btm12">劇場で検索</a>
+        <a id="search_cartoon" href='#' class="btn_normal_line_2 m-Cnt m-Btm12">극장에서 검색</a>
 
         <footer>
             <div class="t-Cnt">(C)窪岡俊之 (C)2011 BNEI</div>
